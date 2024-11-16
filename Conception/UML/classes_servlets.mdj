@@ -221,7 +221,7 @@
 											"top": 1205,
 											"width": 930.845703125,
 											"height": 13,
-											"text": "+showAvailableCourses(courseUnit: CourseUnit, field: string): List<Course>",
+											"text": "+showAvailableCourses(courseUnit: CourseUnit, field: String, minimumDate: Date): List<Course>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -506,23 +506,6 @@
 									"subViews": [
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGTInA3FKxLC5Y=",
-											"_parent": {
-												"$ref": "AAAAAAGS9yRKQfOZbrM="
-											},
-											"model": {
-												"$ref": "AAAAAAGTInA3CKxIea4="
-											},
-											"font": "Arial;13;0",
-											"left": 645,
-											"top": 1160,
-											"width": 995.17919921875,
-											"height": 13,
-											"text": "+createAdministrator(firstname: String, lastname: String, mail: String, password: String, courseUnit: CourseUnit): Administrator",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAGTInIbq7qHLQg=",
 											"_parent": {
 												"$ref": "AAAAAAGS9yRKQfOZbrM="
@@ -532,7 +515,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1175,
+											"top": 1160,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+createAdministrator(firstname: String, lastname: String, mail: String, password: String): Administrator",
@@ -549,7 +532,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1190,
+											"top": 1175,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+createCourse(hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
@@ -566,7 +549,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1205,
+											"top": 1190,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAdministratorProfile(id: int): Administrator",
@@ -583,7 +566,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1220,
+											"top": 1205,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getTeacherProfile(teacherId: int): Teacher",
@@ -600,7 +583,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1235,
+											"top": 1220,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllTeachersInField(fieldName: String): List<Teacher>",
@@ -617,7 +600,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1250,
+											"top": 1235,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllTeachers(): List<Teacher>",
@@ -634,7 +617,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1265,
+											"top": 1250,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getCourseDetails(courseId: int): Course",
@@ -651,7 +634,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1280,
+											"top": 1265,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllCoursesInField(fieldName: String): List<Courses>",
@@ -668,7 +651,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1295,
+											"top": 1280,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllCourses(): List<Courses>",
@@ -685,7 +668,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1310,
+											"top": 1295,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getStudentProfile(studentId: int): Student",
@@ -702,7 +685,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1325,
+											"top": 1310,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllStudentsInSchoolYear(schoolYear: SchoolYear): List<Student>",
@@ -719,7 +702,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1340,
+											"top": 1325,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllStudents(): List<Student>",
@@ -736,7 +719,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1355,
+											"top": 1340,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateAdministrator(id: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): Administrator",
@@ -753,7 +736,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1370,
+											"top": 1355,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateTeacher(teacherId: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): TeacherServlet",
@@ -770,7 +753,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1385,
+											"top": 1370,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateCourse(courseId: int, hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
@@ -787,7 +770,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1400,
+											"top": 1385,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateStudent(int: studentId, newFirstname: String, newLastname: String, newBirth: Date, newContact: String, newSchoolYear: SchoolYear, newPassword: String): Student",
@@ -804,7 +787,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1415,
+											"top": 1400,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteAdminstrator(id: int): void",
@@ -821,7 +804,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1430,
+											"top": 1415,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteStudent(studentId: int): void",
@@ -838,7 +821,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1445,
+											"top": 1430,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteCourse(courseId: int): void",
@@ -855,7 +838,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1460,
+											"top": 1445,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteTeacher(teacherId: int): void",
@@ -866,7 +849,7 @@
 									"left": 640,
 									"top": 1155,
 									"width": 1005.17919921875,
-									"height": 323
+									"height": 308
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -906,7 +889,7 @@
 							"left": 640,
 							"top": 1120,
 							"width": 1005.17919921875,
-							"height": 358,
+							"height": 343,
 							"nameCompartment": {
 								"$ref": "AAAAAAGS9yRKQPOTiTU="
 							},
@@ -1279,11 +1262,11 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 2088,
-							"top": 1376,
-							"width": 257,
-							"height": 66,
-							"text": "+ viewCourseUnitResults(in id:int): HashMap<CourseUnit, float>\nIt show the student's means in all course units"
+							"left": 2080,
+							"top": 1344,
+							"width": 297,
+							"height": 109,
+							"text": "• + showAvalaibleCourses(...): List<Course>\nIt shows courses scheduled after the minimumDate which is the moment the student sends the request.\n• + viewCourseUnitResults(in id:int): HashMap<CourseUnit, float>\nIt shows the student's means in all course units."
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -1299,7 +1282,7 @@
 								"$ref": "AAAAAAGTLLKTpNiQq4M="
 							},
 							"lineStyle": 1,
-							"points": "2217:1375;2218:1313"
+							"points": "2226:1343;2225:1313"
 						}
 					]
 				},
@@ -1586,7 +1569,7 @@
 										"$ref": "AAAAAAGTMPoNj9WGgqE="
 									},
 									"name": "field",
-									"type": "string"
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -1596,6 +1579,15 @@
 									},
 									"type": "List<Course>",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTMg6TkSSHyf4=",
+									"_parent": {
+										"$ref": "AAAAAAGTMPoNj9WGgqE="
+									},
+									"name": "minimumDate",
+									"type": "Date"
 								}
 							]
 						},
@@ -1867,72 +1859,6 @@
 						}
 					],
 					"operations": [
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAGTInA3CKxIea4=",
-							"_parent": {
-								"$ref": "AAAAAAGS9yRKP/OQAxU="
-							},
-							"name": "createAdministrator",
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTInCez6zWwjE=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"name": "firstname",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTInEEZa7NTyQ=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"name": "lastname",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTInEoR6/AByM=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"name": "mail",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTInF/jbCVPCA=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"name": "password",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTInHkv7iEI+8=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"name": "courseUnit",
-									"type": {
-										"$ref": "AAAAAAGS963+ULAbWHk="
-									}
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTLLaxM9ihc9I=",
-									"_parent": {
-										"$ref": "AAAAAAGTInA3CKxIea4="
-									},
-									"type": "Administrator",
-									"direction": "return"
-								}
-							]
-						},
 						{
 							"_type": "UMLOperation",
 							"_id": "AAAAAAGTInIbo7qE4eM=",
