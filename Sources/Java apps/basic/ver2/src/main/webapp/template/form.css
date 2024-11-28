@@ -1,0 +1,18 @@
+#container{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 130px 0;
+}
+#content{
+    background-color: cornflowerblue;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 120px 0;
+    border: 3px black;
+}
+#button{
+    width: 10%;
+    text-align: center;
+}
