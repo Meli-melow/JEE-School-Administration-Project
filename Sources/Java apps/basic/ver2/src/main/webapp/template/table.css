@@ -1,0 +1,37 @@
+.cadre-table-scroll {
+    display: inline-block;
+    height: 20em;
+    width: 100%;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+.table-scroll thead th {
+    position: sticky;
+    top: 0;
+    background: #ddd;
+}
+.table-scroll tfoot td {
+    position: sticky;
+    bottom: 0;
+}
+#container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.table-scroll th,.table-scroll td{
+    border: 1px solid black;
+}
+.table-scroll{
+    border-spacing: 0px;
+    width:100%;
+}
+
+.left-button{
+    cursor: pointer;
+    text-align: left;
+}
+.right-button{
+    cursor: pointer;
+    text-align: right;
+}

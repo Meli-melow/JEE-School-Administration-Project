@@ -1,13 +1,22 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="main_page.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<div id="container">
+    <div id="content">
+        <div class="center-button">
+            <p><a href="login/student_login.jsp">Student Login</a></p>
+        </div>
+        <div class="center-button">
+            <p><a href="admin/main_admin.jsp">Teacher Login</a></p>
+        </div>
+        <div class="center-button">
+            <p><a href="login/admin_login.jsp">Admin Login</a></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
