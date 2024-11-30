@@ -170,7 +170,7 @@
 											"top": 1160,
 											"width": 930.845703125,
 											"height": 13,
-											"text": "+createStudent(firstname: String, lastname: String, birth: Date, contact: String, schoolYear: SchoolYear, password: String): Student",
+											"text": "+login(icontact: String, password: String): Student",
 											"horizontalAlignment": 0
 										},
 										{
@@ -221,7 +221,7 @@
 											"top": 1205,
 											"width": 930.845703125,
 											"height": 13,
-											"text": "+showAvailableCourses(courseUnit: CourseUnit, field: String, minimumDate: Date): List<Course>",
+											"text": "+showAvailableCourses(field: String, minimumWeekDate: Date, maximumWeekDate: Date): List<Course>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -233,6 +233,7 @@
 											"model": {
 												"$ref": "AAAAAAGTItWyiKUnsfU="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1757,
 											"top": 1220,
@@ -250,9 +251,10 @@
 											"model": {
 												"$ref": "AAAAAAGTLOKRS9jswDg="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1757,
-											"top": 1235,
+											"top": 1220,
 											"width": 930.845703125,
 											"height": 13,
 											"text": "+unsignForCourse(unsignCourse: course): void",
@@ -269,7 +271,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1757,
-											"top": 1250,
+											"top": 1220,
 											"width": 930.845703125,
 											"height": 13,
 											"text": "+viewTimetable(id: int): List<Course>",
@@ -286,7 +288,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1757,
-											"top": 1265,
+											"top": 1235,
 											"width": 930.845703125,
 											"height": 13,
 											"text": "+getCourseDetails(id: int): Course",
@@ -303,10 +305,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1757,
-											"top": 1280,
+											"top": 1250,
 											"width": 930.845703125,
 											"height": 13,
-											"text": "+viewCourseUnitResults(id: int): Map",
+											"text": "+viewResultsInField(id: int): Map",
 											"horizontalAlignment": 0
 										},
 										{
@@ -320,10 +322,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1757,
-											"top": 1295,
+											"top": 1265,
 											"width": 930.845703125,
 											"height": 13,
-											"text": "+viewFieldGrades(courseUnit: CourseUnit, field: String, id: int): Result",
+											"text": "+viewFieldAssessments(courseUnit: CourseUnit, field: String, id: int): Result",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTfu15WMXZWBs=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfu15SsXWA2E="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1280,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+getTranscriptOfGrades(DataOutputStream): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -331,7 +350,7 @@
 									"left": 1752,
 									"top": 1155,
 									"width": 940.845703125,
-									"height": 158
+									"height": 143
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -371,7 +390,7 @@
 							"left": 1752,
 							"top": 1120,
 							"width": 940.845703125,
-							"height": 193,
+							"height": 178,
 							"nameCompartment": {
 								"$ref": "AAAAAAGS9yAKw/M1xIA="
 							},
@@ -523,6 +542,23 @@
 										},
 										{
 											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTfukCxMWFX9U=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfukCucWClOY="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1175,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+createTeacher(firstname: String, lastname: String, mail: String, field: String, password: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
 											"_id": "AAAAAAGTInOPSs3TuWc=",
 											"_parent": {
 												"$ref": "AAAAAAGS9yRKQfOZbrM="
@@ -532,10 +568,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1175,
+											"top": 1190,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+createCourse(hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
+											"text": "+createCourse(schoolYear: SchoolYear, slot: Date, hour: String, field: String, teacherMail: String): Course",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTfuodu8WWU9s=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfuodtMWTsMI="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1205,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+createStudent(firstname: String, lastname: String, birth: Date, mail: String, schoolYear: SchoolYear, password: String)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -549,10 +602,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1190,
+											"top": 1220,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getAdministratorProfile(id: int): Administrator",
+											"text": "+getAdministratorById(id: int): Administrator",
 											"horizontalAlignment": 0
 										},
 										{
@@ -566,27 +619,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1205,
+											"top": 1235,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getTeacherProfile(teacherId: int): Teacher",
+											"text": "+getTeacherById(teacherId: int): Teacher",
 											"horizontalAlignment": 0
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGTIoE9mVsz1Lg=",
+											"_id": "AAAAAAGTftqzDsUmTBs=",
 											"_parent": {
 												"$ref": "AAAAAAGS9yRKQfOZbrM="
 											},
 											"model": {
-												"$ref": "AAAAAAGTIoE9k1sw24w="
+												"$ref": "AAAAAAGTftqy88UjDDs="
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1220,
+											"top": 1250,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getAllTeachersInField(fieldName: String): List<Teacher>",
+											"text": "+getTeacherByMail(teacherMail: String): Teacher",
 											"horizontalAlignment": 0
 										},
 										{
@@ -600,10 +653,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1235,
+											"top": 1265,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getAllTeachers(): List<Teacher>",
+											"text": "+getAllTeachers(String: field): List<Teacher>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -617,7 +670,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1250,
+											"top": 1280,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getCourseDetails(courseId: int): Course",
@@ -634,27 +687,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1265,
+											"top": 1295,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+getAllCoursesInField(fieldName: String): List<Courses>",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAGTIm166Yy/UVs=",
-											"_parent": {
-												"$ref": "AAAAAAGS9yRKQfOZbrM="
-											},
-											"model": {
-												"$ref": "AAAAAAGTIm1644y8X5E="
-											},
-											"font": "Arial;13;0",
-											"left": 645,
-											"top": 1280,
-											"width": 995.17919921875,
-											"height": 13,
-											"text": "+getAllCourses(): List<Courses>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -668,27 +704,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1295,
+											"top": 1310,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getStudentProfile(studentId: int): Student",
+											"text": "+getStudentById(studentId: int): Student",
 											"horizontalAlignment": 0
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGTIoNs22pdG+g=",
+											"_id": "AAAAAAGTfuXu7sVfGmI=",
 											"_parent": {
 												"$ref": "AAAAAAGS9yRKQfOZbrM="
 											},
 											"model": {
-												"$ref": "AAAAAAGTIoNs1WpaWcg="
+												"$ref": "AAAAAAGTfuXu48VcVTU="
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1310,
+											"top": 1325,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getAllStudentsInSchoolYear(schoolYear: SchoolYear): List<Student>",
+											"text": "+getStudentByMail(studentMail: String): Teacher",
 											"horizontalAlignment": 0
 										},
 										{
@@ -702,10 +738,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1325,
+											"top": 1340,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+getAllStudents(): List<Student>",
+											"text": "+getAllStudents(schoolYear: SchoolYear): List<Student>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -719,7 +755,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1340,
+											"top": 1355,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateAdministrator(id: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): Administrator",
@@ -736,7 +772,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1355,
+											"top": 1370,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateTeacher(teacherId: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): TeacherServlet",
@@ -753,10 +789,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1370,
+											"top": 1385,
 											"width": 995.17919921875,
 											"height": 13,
-											"text": "+updateCourse(courseId: int, hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
+											"text": "+updateCourse(courseId: int, slot: Date, hour: String, field: String, teacherMail: String, schoolYear: SchoolYear): Course",
 											"horizontalAlignment": 0
 										},
 										{
@@ -770,7 +806,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1385,
+											"top": 1400,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+updateStudent(int: studentId, newFirstname: String, newLastname: String, newBirth: Date, newContact: String, newSchoolYear: SchoolYear, newPassword: String): Student",
@@ -787,7 +823,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1400,
+											"top": 1415,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteAdminstrator(id: int): void",
@@ -804,7 +840,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1415,
+											"top": 1430,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteStudent(studentId: int): void",
@@ -821,7 +857,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1430,
+											"top": 1445,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteCourse(courseId: int): void",
@@ -838,7 +874,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1445,
+											"top": 1460,
 											"width": 995.17919921875,
 											"height": 13,
 											"text": "+deleteTeacher(teacherId: int): void",
@@ -849,7 +885,7 @@
 									"left": 640,
 									"top": 1155,
 									"width": 1005.17919921875,
-									"height": 308
+									"height": 323
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -889,7 +925,7 @@
 							"left": 640,
 							"top": 1120,
 							"width": 1005.17919921875,
-							"height": 343,
+							"height": 358,
 							"nameCompartment": {
 								"$ref": "AAAAAAGS9yRKQPOTiTU="
 							},
@@ -1109,23 +1145,6 @@
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAGTItRuGaM7BAs=",
-											"_parent": {
-												"$ref": "AAAAAAGS9y0P+vuEObo="
-											},
-											"model": {
-												"$ref": "AAAAAAGTItRuB6M4dwo="
-											},
-											"font": "Arial;13;0",
-											"left": 1749,
-											"top": 1659,
-											"width": 992.7353515625,
-											"height": 13,
-											"text": "+createReport(schoolYear: SchoolYear, text: String): DataOutputStream<String>",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAGTItkVasTgeTI=",
 											"_parent": {
 												"$ref": "AAAAAAGS9y0P+vuEObo="
@@ -1135,10 +1154,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1749,
-											"top": 1674,
+											"top": 1659,
 											"width": 992.7353515625,
 											"height": 13,
-											"text": "+assessStudents(schoolYear: SchoolYear, courseUnit: CourseUnit, field: String, assessName: String, coefficient: float, testDate: Date, grades: HashSet<float>): void",
+											"text": "+assessStudents(schoolYear: SchoolYear, field: String, assessName: String, coefficient: float, testDate: Date, grades: HashSet<float>): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1152,7 +1171,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1749,
-											"top": 1689,
+											"top": 1674,
 											"width": 992.7353515625,
 											"height": 13,
 											"text": "+changeGrades(studentId: int, resultId: int, grades: HashSet<float>): Result",
@@ -1187,7 +1206,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1749,
-											"top": 1704,
+											"top": 1689,
 											"width": 992.7353515625,
 											"height": 13,
 											"text": "+updateStudentAssessments(assessmentIds: HashSet<int>, assessmentsNames: HashSet<String>, coefficients: HashSet<float>, grades: HashSet<float>): void",
@@ -1198,7 +1217,7 @@
 									"left": 1744,
 									"top": 1579,
 									"width": 1002.7353515625,
-									"height": 143
+									"height": 128
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1238,7 +1257,7 @@
 							"left": 1744,
 							"top": 1544,
 							"width": 1002.7353515625,
-							"height": 178,
+							"height": 163,
 							"nameCompartment": {
 								"$ref": "AAAAAAGS9y0P+ft+A98="
 							},
@@ -1262,7 +1281,7 @@
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"font": "Arial;13;0",
-							"left": 2080,
+							"left": 2072,
 							"top": 1344,
 							"width": 297,
 							"height": 109,
@@ -1282,7 +1301,36 @@
 								"$ref": "AAAAAAGTLLKTpNiQq4M="
 							},
 							"lineStyle": 1,
-							"points": "2226:1343;2225:1313"
+							"points": "2220:1343;2221:1298"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGTfvIFCMX0Gg0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1032,
+							"top": 1032,
+							"width": 248,
+							"height": 64,
+							"text": "• all method getAll...() parameters are used for filtering, they may be facultative and it will be checked by the AdminService "
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGTfvN7ZcX7H5M=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGS9yRKQPOSu0s="
+							},
+							"tail": {
+								"$ref": "AAAAAAGTfvIFCMX0Gg0="
+							},
+							"lineStyle": 1,
+							"points": "1153:1096;1152:1119"
 						}
 					]
 				},
@@ -1409,7 +1457,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS9yAKwfMy4/M="
 							},
-							"name": "createStudent",
+							"name": "login",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -1417,50 +1465,12 @@
 									"_parent": {
 										"$ref": "AAAAAAGTLF2rRdC8LnY="
 									},
-									"name": "firstname",
+									"name": "icontact",
 									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
 									"_id": "AAAAAAGTLF8VBdEYJk8=",
-									"_parent": {
-										"$ref": "AAAAAAGTLF2rRdC8LnY="
-									},
-									"name": "lastname",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTLF8VBdEZnyE=",
-									"_parent": {
-										"$ref": "AAAAAAGTLF2rRdC8LnY="
-									},
-									"name": "birth",
-									"type": "Date"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTLF8VBdEaJfQ=",
-									"_parent": {
-										"$ref": "AAAAAAGTLF2rRdC8LnY="
-									},
-									"name": "contact",
-									"type": "String"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTLF8VBdEbKJk=",
-									"_parent": {
-										"$ref": "AAAAAAGTLF2rRdC8LnY="
-									},
-									"name": "schoolYear",
-									"type": {
-										"$ref": "AAAAAAGS92AL79vmbUs="
-									}
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTLF8VBdEcRvI=",
 									"_parent": {
 										"$ref": "AAAAAAGTLF2rRdC8LnY="
 									},
@@ -1557,10 +1567,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTMPoNj9WGgqE="
 									},
-									"name": "courseUnit",
-									"type": {
-										"$ref": "AAAAAAGS963+ULAbWHk="
-									}
+									"name": "field",
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -1568,8 +1576,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTMPoNj9WGgqE="
 									},
-									"name": "field",
-									"type": "String"
+									"name": "minimumWeekDate",
+									"type": "Date"
 								},
 								{
 									"_type": "UMLParameter",
@@ -1586,7 +1594,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTMPoNj9WGgqE="
 									},
-									"name": "minimumDate",
+									"name": "maximumWeekDate",
 									"type": "Date"
 								}
 							]
@@ -1713,7 +1721,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS9yAKwfMy4/M="
 							},
-							"name": "viewCourseUnitResults",
+							"name": "viewResultsInField",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -1741,7 +1749,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS9yAKwfMy4/M="
 							},
-							"name": "viewFieldGrades",
+							"name": "viewFieldAssessments",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -1782,6 +1790,34 @@
 										"$ref": "AAAAAAGS9108xshChwg="
 									},
 									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTfu15SsXWA2E=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "getTranscriptOfGrades",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfu5pvsXdcWo=",
+									"_parent": {
+										"$ref": "AAAAAAGTfu15SsXWA2E="
+									},
+									"type": "void",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfu7miMXmHbc=",
+									"_parent": {
+										"$ref": "AAAAAAGTfu15SsXWA2E="
+									},
+									"name": "DataOutputStream",
+									"type": ""
 								}
 							]
 						}
@@ -1916,6 +1952,61 @@
 						},
 						{
 							"_type": "UMLOperation",
+							"_id": "AAAAAAGTfukCucWClOY=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createTeacher",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWJJ08=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "firstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWK5/w=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWLRdc=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWMe6o=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "field",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWNBH8=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "password",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
 							"_id": "AAAAAAGTInOPQc3QdSs=",
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
@@ -1928,8 +2019,10 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInOPQc3QdSs="
 									},
-									"name": "hour",
-									"type": "Date"
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
 								},
 								{
 									"_type": "UMLParameter",
@@ -1937,8 +2030,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInOPQc3QdSs="
 									},
-									"name": "field",
-									"type": "String"
+									"name": "slot",
+									"type": "Date"
 								},
 								{
 									"_type": "UMLParameter",
@@ -1946,7 +2039,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInOPQc3QdSs="
 									},
-									"name": "teacherName",
+									"name": "hour",
 									"type": "String"
 								},
 								{
@@ -1955,10 +2048,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInOPQc3QdSs="
 									},
-									"name": "courseUnit",
-									"type": {
-										"$ref": "AAAAAAGS963+ULAbWHk="
-									}
+									"name": "field",
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -1970,6 +2061,81 @@
 										"$ref": "AAAAAAGS9zVp4RH7ICk="
 									},
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTft2RisVAtUw=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+									"name": "teacherMail",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTfuodtMWTsMI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createStudent",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWb8ck=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "firstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWcsMs=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWdpvU=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "birth",
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWe02k=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWftaU=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWgazg=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "password",
+									"type": "String"
 								}
 							]
 						},
@@ -1979,7 +2145,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
 							},
-							"name": "getAdministratorProfile",
+							"name": "getAdministratorById",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -2007,7 +2173,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
 							},
-							"name": "getTeacherProfile",
+							"name": "getTeacherById",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -2031,28 +2197,28 @@
 						},
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAGTIoE9k1sw24w=",
+							"_id": "AAAAAAGTftqy88UjDDs=",
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
 							},
-							"name": "getAllTeachersInField",
+							"name": "getTeacherByMail",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIoGC7Fu+JQU=",
+									"_id": "AAAAAAGTftsSwcUqhwA=",
 									"_parent": {
-										"$ref": "AAAAAAGTIoE9k1sw24w="
+										"$ref": "AAAAAAGTftqy88UjDDs="
 									},
-									"name": "fieldName",
+									"name": "teacherMail",
 									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIoGC7Fu/VGs=",
+									"_id": "AAAAAAGTftsSwsUrn4g=",
 									"_parent": {
-										"$ref": "AAAAAAGTIoE9k1sw24w="
+										"$ref": "AAAAAAGTftqy88UjDDs="
 									},
-									"type": "List<Teacher>",
+									"type": "Teacher",
 									"direction": "return"
 								}
 							]
@@ -2073,6 +2239,15 @@
 									},
 									"type": "List<Teacher>",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTft5Jw8VIZOw=",
+									"_parent": {
+										"$ref": "AAAAAAGTImyNlonJTaI="
+									},
+									"name": "String",
+									"type": "field"
 								}
 							]
 						},
@@ -2136,30 +2311,11 @@
 						},
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAGTIm1644y8X5E=",
-							"_parent": {
-								"$ref": "AAAAAAGS9yRKP/OQAxU="
-							},
-							"name": "getAllCourses",
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIm3sCZaGp3o=",
-									"_parent": {
-										"$ref": "AAAAAAGTIm1644y8X5E="
-									},
-									"type": "List<Courses>",
-									"direction": "return"
-								}
-							]
-						},
-						{
-							"_type": "UMLOperation",
 							"_id": "AAAAAAGTIoIBiWGOaO8=",
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
 							},
-							"name": "getStudentProfile",
+							"name": "getStudentById",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -2183,30 +2339,28 @@
 						},
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAGTIoNs1WpaWcg=",
+							"_id": "AAAAAAGTfuXu48VcVTU=",
 							"_parent": {
 								"$ref": "AAAAAAGS9yRKP/OQAxU="
 							},
-							"name": "getAllStudentsInSchoolYear",
+							"name": "getStudentByMail",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIoRIZIg0I04=",
+									"_id": "AAAAAAGTfuY53MVj05E=",
 									"_parent": {
-										"$ref": "AAAAAAGTIoNs1WpaWcg="
+										"$ref": "AAAAAAGTfuXu48VcVTU="
 									},
-									"name": "schoolYear",
-									"type": {
-										"$ref": "AAAAAAGS92AL79vmbUs="
-									}
+									"name": "studentMail",
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIoRIZIg1IGw=",
+									"_id": "AAAAAAGTfuY53MVkrGQ=",
 									"_parent": {
-										"$ref": "AAAAAAGTIoNs1WpaWcg="
+										"$ref": "AAAAAAGTfuXu48VcVTU="
 									},
-									"type": "List<Student>",
+									"type": "Teacher",
 									"direction": "return"
 								}
 							]
@@ -2227,6 +2381,17 @@
 									},
 									"type": "List<Student>",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuBpQ8VU1Os=",
+									"_parent": {
+										"$ref": "AAAAAAGTIimgKTG47z8="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
 								}
 							]
 						},
@@ -2394,7 +2559,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInWPbgZCJuM="
 									},
-									"name": "hour",
+									"name": "slot",
 									"type": "Date"
 								},
 								{
@@ -2403,7 +2568,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInWPbgZCJuM="
 									},
-									"name": "field",
+									"name": "hour",
 									"type": "String"
 								},
 								{
@@ -2412,7 +2577,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInWPbgZCJuM="
 									},
-									"name": "teacherName",
+									"name": "field",
 									"type": "String"
 								},
 								{
@@ -2421,9 +2586,18 @@
 									"_parent": {
 										"$ref": "AAAAAAGTInWPbgZCJuM="
 									},
-									"name": "courseUnit",
+									"name": "teacherMail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuc+GsVoU3Q=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+									"name": "schoolYear",
 									"type": {
-										"$ref": "AAAAAAGS963+ULAbWHk="
+										"$ref": "AAAAAAGS92AL79vmbUs="
 									}
 								}
 							]
@@ -2923,45 +3097,6 @@
 						},
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAGTItRuB6M4dwo=",
-							"_parent": {
-								"$ref": "AAAAAAGS9y0P+ft7n9Q="
-							},
-							"name": "createReport",
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTItVdqaPD3mM=",
-									"_parent": {
-										"$ref": "AAAAAAGTItRuB6M4dwo="
-									},
-									"name": "schoolYear",
-									"type": {
-										"$ref": "AAAAAAGS92AL79vmbUs="
-									}
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTItVdqqPEFfA=",
-									"_parent": {
-										"$ref": "AAAAAAGTItRuB6M4dwo="
-									},
-									"type": "DataOutputStream<String>",
-									"direction": "return"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTIuFaaOyt1IE=",
-									"_parent": {
-										"$ref": "AAAAAAGTItRuB6M4dwo="
-									},
-									"name": "text",
-									"type": "String"
-								}
-							]
-						},
-						{
-							"_type": "UMLOperation",
 							"_id": "AAAAAAGTItkVScTdpSE=",
 							"_parent": {
 								"$ref": "AAAAAAGS9y0P+ft7n9Q="
@@ -2985,10 +3120,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTItkVScTdpSE="
 									},
-									"name": "courseUnit",
-									"type": {
-										"$ref": "AAAAAAGS963+ULAbWHk="
-									}
+									"name": "field",
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -2996,7 +3129,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGTItkVScTdpSE="
 									},
-									"name": "field",
+									"name": "assessName",
 									"type": "String"
 								},
 								{
@@ -3005,8 +3138,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGTItkVScTdpSE="
 									},
-									"name": "assessName",
-									"type": "String"
+									"name": "coefficient",
+									"type": "float"
 								},
 								{
 									"_type": "UMLParameter",
@@ -3023,21 +3156,12 @@
 									"_parent": {
 										"$ref": "AAAAAAGTItkVScTdpSE="
 									},
-									"name": "coefficient",
-									"type": "float"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAGTK94qiRAKIWI=",
-									"_parent": {
-										"$ref": "AAAAAAGTItkVScTdpSE="
-									},
 									"name": "testDate",
 									"type": "Date"
 								},
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAGTK94qiRALU2k=",
+									"_id": "AAAAAAGTK94qiRAKIWI=",
 									"_parent": {
 										"$ref": "AAAAAAGTItkVScTdpSE="
 									},
