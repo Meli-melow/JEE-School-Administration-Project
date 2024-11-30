@@ -57,9 +57,13 @@ public class Student {
     @OneToMany(mappedBy = "student")
     private Set<Result> results;
 
-    //TODO : see if accessing and saving can be done without using an association with the Course Entity
     //TODO : STUDENT CASCADING -> PERSIST, MERGE (?), REFRESH OU SAVE_UPDATE
-    @Transient
+
+
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}, mappedBy = "students")
+    /**
+     * Student table is equivalent to the referenced.
+     */
     private List<Course> timetable;
 
     public Student(String firstname, String lastname, String mail, String pswd, Date birth,
@@ -136,16 +140,6 @@ public class Student {
 
     public void setTimetable(List<Course> timetable) { this.timetable = timetable; }
 
-    public void addCourse(Course courseToAdd) {
-        if(!timetable.contains(courseToAdd))
-            timetable.add(courseToAdd);
-    }
-
-    public void removeCourse(Course courseToRemove) {
-        if (!timetable.isEmpty())
-            timetable.remove(courseToRemove);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -162,6 +156,56 @@ public class Student {
         if (schoolYear != null ? !schoolYear.equals(student.schoolYear) : student.schoolYear != null) return false;
 
         return true;
+    }
+
+    /**
+     * For tests purposes.<br>
+     * Because ids are generated automatically, no constructor with an id as a parameter is required.
+     * Since test data is known, the corresponding id has to be specified.
+     */
+    public boolean equals(Object o, int id) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (this.id != id) return false;
+        if (firstname != null ? !firstname.equals(student.firstname) : student.firstname != null) return false;
+        if (lastname != null ? !lastname.equals(student.lastname) : student.lastname != null) return false;
+        if (mail != null ? !mail.equals(student.mail) : student.mail != null) return false;
+        if (pswd != null ? !pswd.equals(student.pswd) : student.pswd != null) return false;
+        if (birth != null ? !birth.equals(student.birth) : student.birth != null) return false;
+        if (schoolYear != null ? !schoolYear.equals(student.schoolYear) : student.schoolYear != null) return false;
+
+        return true;
+    }
+
+    /**
+     * For debugging.
+     */
+    @Override
+    public String toString() {
+        return "Student instance\n" +
+                "id : " + id + "; firstname : " + firstname + "; lastname : " + lastname + "; mail : " + mail
+                + ";\npassword : " + pswd + "; birthday : " + birth.toString() + "; school year : " + schoolYear + "\n"
+                /*+ studentTimetableToString()*/;
+    }
+
+    /**
+     * For debugging.<br>
+     * Be careful when calling .studentTimetableToString() in .toString() while debugging any operations linked to an entity relation to Student.<br>
+     * It will overlap with the other entity .toString() because each instance will print the other one infinitely.<br>
+     * For instance, with .courseStudentsToString() from Course entity.<br>
+     * Do not call .studentTimetableToString() when debugging IS NOT focused on a student instance.
+     */
+    public String studentTimetableToString() {
+        String studentTimetable = "";
+        for (Course studentClass : timetable)
+            studentTimetable += "Course instance :\nfield : " + studentClass.getField() + "; date : "
+                    + studentClass.getSlot() + " " + studentClass.getHour() + "; teacher : " + studentClass.getTeacher().getFirstname()
+                    + " " + studentClass.getTeacher().getLastname() + "\n";
+
+        return "Student timetable :\n" + studentTimetable;
     }
 
     @Override

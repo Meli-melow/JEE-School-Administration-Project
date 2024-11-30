@@ -2,6 +2,7 @@ package entities;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -44,17 +45,16 @@ public class Teacher {
     @Column(name = "field", nullable = false)
     private String field;
 
-    @OneToMany(mappedBy = "teacher")
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "teacher")
     private List<Course> timetable;
 
-    public Teacher(String firstname, String lastname, String mail, String pswd, String field,
-    List<Course> timetable) {
+    public Teacher(String firstname, String lastname, String mail, String pswd, String field) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.mail = mail;
         this.pswd = pswd;
         this.field = field;
-        this.timetable = timetable;
+        timetable = new ArrayList<>();
     }
 
     public Teacher() {}
@@ -107,6 +107,14 @@ public class Teacher {
         this.field = field;
     }
 
+    public List<Course> getTimetable() {
+        return timetable;
+    }
+
+    public void setTimetable(List<Course> timetable) {
+        this.timetable = timetable;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -125,8 +133,10 @@ public class Teacher {
     }
 
     /**
-     * For tests purposes
-     * */
+     * For tests purposes.<br>
+     * Because ids are generated automatically, no constructor with an id as a parameter is required.
+     * Since test data is known, the corresponding id has to be specified.
+     */
     public boolean equals(Object o, int id) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -144,13 +154,30 @@ public class Teacher {
     }
 
     /**
-     * For tests purposes
+     * For debugging.
      */
     @Override
     public String toString() {
         return "Teacher instance\n" +
                 "id : " + id + "; firstname : " + firstname + "; lastname : " + lastname + "; mail : " + mail
-                + ";\npassword : " + pswd + "; field : " + field + "\n";
+                + ";\npassword : " + pswd + "; field : " + field + "\n"
+                + teacherTimetableToString();
+    }
+
+    /**
+     * For debugging.<br>
+     * Be careful when calling .teacherTimetableToString() in .toString() while debugging any operations linked to an entity relation to Teacher.<br>
+     * It will overlap with the other entity .toString() because each instance will print the other one infinitely.<br>
+     * For instance, with .courseStudentsToString() from Course entity.<br>
+     * Do not call .teacherTimetableToString() when debugging IS NOT focused on a teacher instance.
+     */
+    public String teacherTimetableToString() {
+        String teacherTimetable = "";
+        for (Course teacherClass : timetable)
+            teacherTimetable += "Course instance :\nid : " + teacherClass.getId() + "; field : " + teacherClass.getField() + "; date : "
+                    + teacherClass.getSlot() + " " + teacherClass.getHour() + "\n";
+
+        return "Teacher timetable :\n" + teacherTimetable;
     }
 
     @Override
@@ -162,13 +189,5 @@ public class Teacher {
         result = 31 * result + (pswd != null ? pswd.hashCode() : 0);
         result = 31 * result + (field != null ? field.hashCode() : 0);
         return result;
-    }
-
-    public List<Course> getTimetable() {
-        return timetable;
-    }
-
-    public void setTimetable(List<Course> timetable) {
-        this.timetable = timetable;
     }
 }

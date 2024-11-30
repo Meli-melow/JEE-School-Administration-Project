@@ -28,12 +28,11 @@ public class Result {
     @Column(name = "unit_coeff", nullable = false)
     private BigDecimal unitCoeff;
 
-    //TODO : Should be nullable
     @OneToMany(mappedBy = "result")
     private Set<Assessment> assessments;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_student", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "student_id", referencedColumnName = "id", nullable = false)
     private Student student;
 
     public Result(String field, String courseUnit, BigDecimal unitCoeff, Set<Assessment> assessments,

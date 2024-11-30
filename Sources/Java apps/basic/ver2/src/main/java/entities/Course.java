@@ -3,6 +3,8 @@ package entities;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Every field cannot be NULL (see SQL file)
@@ -21,30 +23,49 @@ public class Course {
     @Column(name = "slot", nullable = false)
     private Date slot;
 
+    @Column(name = "hour", nullable = false)
+    private String hour;
+
     @Column(name = "duration", nullable = false)
     private String duration;
-
-    @Column(name = "course_unit", nullable = false)
-    private String courseUnit;
 
     @Column(name = "school_year", nullable = false)
     private String schoolYear;
 
+    @Column(name = "course_unit", nullable = false)
+    private String courseUnit;
+
     //TODO : CASCADING for deleting
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_teacher", referencedColumnName = "id", nullable = false)
+
+    // No PERSIST cascading because Teacher instances must be created before Course instances
+    //so Teacher instances are not transient while Course ones are
+    // MERGE cascading not required because .merge() is called during transactions
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @JoinColumn(name = "teacher_id", referencedColumnName = "id", nullable = false)
     private Teacher teacher;
 
-    //TODO : STUDENT CASCADING -> PERSIST, MERGE (?), REFRESH OU SAVE_UPDATE
+    //TODO : STUDENT CASCADING -> MERGE, REFRESH
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinTable(name = "student_courses",
+            joinColumns = { @JoinColumn(name = "course_id") },
+            inverseJoinColumns = { @JoinColumn(name = "student_id")}
+    )
+    /**
+     * Association table student_courses.
+     * Course table is equivalent to the host.
+     */
+    private Set<Student> students;
 
-    public Course(String field, Date slot, String duration, String courseUnit, String schoolYear,
+    public Course(String field, Date slot, String hour, String duration, String courseUnit, String schoolYear,
     Teacher teacher) {
         this.field = field;
         this.slot = slot;
+        this.hour = hour;
         this.duration = duration;
         this.courseUnit = courseUnit;
-        this.schoolYear = Course.this.schoolYear;
+        this.schoolYear = schoolYear;
         this.teacher = teacher;
+        students = new HashSet<>();
     }
 
     public Course() {}
@@ -73,13 +94,19 @@ public class Course {
         this.slot = slot;
     }
 
-    public String getDuration() {
-        return duration;
-    }
+    public String getHour() { return hour; }
+
+    public void setHour(String hour) { this.hour = hour; }
+
+    public String getDuration() { return duration; }
 
     public void setDuration(String duration) {
         this.duration = duration;
     }
+
+    public String getSchoolYear() { return schoolYear; }
+
+    public void setSchoolYear(String schoolYear) { this.schoolYear = schoolYear; }
 
     public String getCourseUnit() {
         return courseUnit;
@@ -89,14 +116,6 @@ public class Course {
         this.courseUnit = courseUnit;
     }
 
-    public String getStudents() {
-        return schoolYear;
-    }
-
-    public void setStudents(String schoolYear) {
-        this.schoolYear = Course.this.schoolYear;
-    }
-
     public Teacher getTeacher() {
         return teacher;
     }
@@ -104,6 +123,10 @@ public class Course {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
+
+    public Set<Student> getStudents() { return students; }
+
+    public void setStudents(Set<Student> students) { this.students = students; }
 
     @Override
     public boolean equals(Object o) {
@@ -123,8 +146,10 @@ public class Course {
     }
 
     /**
-     * For tests purposes
-     * */
+     * For tests purposes.<br>
+     * Because ids are generated automatically, no constructor with an id as a parameter is required.
+     * Since test data is known, the corresponding id has to be specified.
+     */
     public boolean equals(Object o, int id) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -142,13 +167,31 @@ public class Course {
     }
 
     /**
-     * For tests purposes
+     * For debugging.
      */
     @Override
     public String toString() {
         return "Course instance\n" +
-               "id : " + id + "; field : " + field + "; slot : " + slot + "; duration : " + duration
-               + ";\ncourse unit : " + courseUnit + "; schoolYear : " + schoolYear + "\n";
+               "id : " + id + "; field : " + field + "; slot : " + slot.toString() + "; duration : " + duration
+               + ";\ncourse unit : " + courseUnit + "; schoolYear : " + schoolYear + "; teacher : " + teacher.getFirstname()
+               + " " + teacher.getLastname() + "\n"
+               /*+ courseStudentsToString()*/;
+    }
+
+    /**
+     * For debugging.<br>
+     * Be careful when calling .courseStudentToString() in .toString() while debugging any operations linked to an entity relation to Course.<br>
+     * It will overlap with the other entity .toString() because each instance will print the other one infinitely.<br>
+     * For instance, with .studentTimetableToString() from Student entity.<br>
+     * Do not call .courseStudentsToString() when debugging IS NOT focused on a course instance.
+     */
+    public String courseStudentsToString() {
+        String courseStudents = "";
+        for (Student signedUpStudent : students)
+            courseStudents += "Student instance\nid : " + signedUpStudent.getId() + "; firstname : " + signedUpStudent.getFirstname()
+                    + "; lastname : " + signedUpStudent.getLastname() + "\n";
+
+        return "Course students :\n" + courseStudents;
     }
 
     @Override

@@ -26,7 +26,7 @@ public class Assessment {
     private BigDecimal grade;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_result", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "result_id", referencedColumnName = "id", nullable = false)
     private Result result;
 
     public Assessment(String assessName, BigDecimal coefficient, Date testDate, BigDecimal grade,
