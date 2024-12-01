@@ -1,0 +1,4682 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGS9yAKwvM013A=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGS9yAKw/M1xIA=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yAKwvM013A="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yAKwfMy4/M="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yAKw/M2gxA=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKw/M1xIA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3264,
+											"top": 2160,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yAKw/M3rcw=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKw/M1xIA="
+											},
+											"font": "Arial;13;1",
+											"left": 1757,
+											"top": 1127,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "StudentServlet"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yAKw/M4EgU=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKw/M1xIA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3264,
+											"top": 2160,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yAKw/M5WN4=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKw/M1xIA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3264,
+											"top": 2160,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1752,
+									"top": 1120,
+									"width": 940.845703125,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGS9yAKw/M2gxA="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGS9yAKw/M3rcw="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGS9yAKw/M4EgU="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGS9yAKw/M5WN4="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGS9yAKw/M68ZA=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yAKwvM013A="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yAKwfMy4/M="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGS9zlD4xW+/Ws=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKw/M68ZA="
+											},
+											"model": {
+												"$ref": "AAAAAAGS9zlD3BW7HUE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 2901,
+											"top": 2096,
+											"width": 206,
+											"height": 13,
+											"text": "-String: group",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1752,
+									"top": 1145,
+									"width": 940.845703125,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGS9yAKxPM7DnQ=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yAKwvM013A="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yAKwfMy4/M="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLF2rVdC/4Vc=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLF2rRdC8LnY="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1160,
+											"width": 930.845703125,
+											"height": 13,
+<<<<<<< Updated upstream
+											"text": "+login(icontact: String, password: String): Student",
+=======
+<<<<<<< Updated upstream
+											"text": "+createStudent(firstname: String, lastname: String, birth: Date, contact: String, schoolYear: SchoolYear, password: String): Student",
+=======
+											"text": "+studentLogin(icontact: String, password: String): Student",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLF9bmdGvY8g=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLF9bkdGszh8="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1175,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+getStudentProfile(id: int): Student",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLF/GAdIISh4=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLF/F+NIFi08="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1190,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+changePassword(id: int, newPassword: String): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTMPoNotWJTMA=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTMPoNj9WGgqE="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1205,
+											"width": 930.845703125,
+											"height": 13,
+<<<<<<< Updated upstream
+											"text": "+showAvailableCourses(field: String, minimumWeekDate: Date, maximumWeekDate: Date): List<Course>",
+=======
+											"text": "+showAvailableCourses(courseUnit: CourseUnit, field: String, minimumDate: Date): List<Course>",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTItWymaUqDrs=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTItWyiKUnsfU="
+											},
+<<<<<<< Updated upstream
+											"visible": false,
+=======
+>>>>>>> Stashed changes
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1220,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+signUpCourse(addCourse: Course): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLOKRV9jvWas=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLOKRS9jswDg="
+											},
+<<<<<<< Updated upstream
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1220,
+=======
+											"font": "Arial;13;0",
+											"left": 1757,
+											"top": 1235,
+>>>>>>> Stashed changes
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+unsignForCourse(unsignCourse: course): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLGNwP9hDZqU=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLGNwOdhA0fM="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+<<<<<<< Updated upstream
+											"top": 1220,
+=======
+<<<<<<< Updated upstream
+											"top": 1250,
+=======
+											"top": 1205,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+viewTimetable(id: int): List<Course>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLGPeXdhOpWo=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLGPeVNhLdJQ="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+<<<<<<< Updated upstream
+											"top": 1235,
+=======
+<<<<<<< Updated upstream
+											"top": 1265,
+=======
+											"top": 1220,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+getCourseDetails(id: int): Course",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLGsjothaIeg=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLGsjmdhXFR4="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+<<<<<<< Updated upstream
+											"top": 1250,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+viewResultsInField(id: int): Map",
+=======
+<<<<<<< Updated upstream
+											"top": 1280,
+=======
+											"top": 1235,
+>>>>>>> Stashed changes
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+viewCourseUnitResults(id: int): Map",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLHBtOdhgV+U=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLHBtMdhdYho="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+<<<<<<< Updated upstream
+											"top": 1265,
+=======
+<<<<<<< Updated upstream
+											"top": 1295,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+viewFieldGrades(courseUnit: CourseUnit, field: String, id: int): Result",
+=======
+											"top": 1250,
+>>>>>>> Stashed changes
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+viewFieldAssessments(courseUnit: CourseUnit, field: String, id: int): Result",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTfu15WMXZWBs=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yAKxPM7DnQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfu15SsXWA2E="
+											},
+											"font": "Arial;13;0",
+											"left": 1757,
+<<<<<<< Updated upstream
+											"top": 1280,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+getTranscriptOfGrades(DataOutputStream): void",
+=======
+											"top": 1265,
+											"width": 930.845703125,
+											"height": 13,
+											"text": "+getTranscriptOfGrades(DataOutputStream): void",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1752,
+									"top": 1155,
+									"width": 940.845703125,
+<<<<<<< Updated upstream
+									"height": 143
+=======
+<<<<<<< Updated upstream
+									"height": 158
+=======
+									"height": 128
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGS9yAKxPM8QfU=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yAKwvM013A="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yAKwfMy4/M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1648,
+									"top": 1208,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGS9yAKxPM9kPI=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yAKwvM013A="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yAKwfMy4/M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1648,
+									"top": 1208,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 1752,
+							"top": 1120,
+							"width": 940.845703125,
+<<<<<<< Updated upstream
+							"height": 178,
+=======
+<<<<<<< Updated upstream
+							"height": 193,
+=======
+							"height": 163,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+							"nameCompartment": {
+								"$ref": "AAAAAAGS9yAKw/M1xIA="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGS9yAKw/M68ZA="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGS9yAKxPM7DnQ="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGS9yAKxPM8QfU="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGS9yAKxPM9kPI="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGS9yRKQPOSu0s=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGS9yRKQPOTiTU=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yRKQPOSu0s="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yRKP/OQAxU="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yRKQPOUm3s=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQPOTiTU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 336,
+											"top": 1840,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yRKQPOVQZ8=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQPOTiTU="
+											},
+											"font": "Arial;13;1",
+											"left": 645,
+											"top": 1127,
+<<<<<<< Updated upstream
+											"width": 995.17919921875,
+=======
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "AdministratorServlet"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yRKQPOWr+M=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQPOTiTU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 336,
+											"top": 1840,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9yRKQPOXk/I=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQPOTiTU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 336,
+											"top": 1840,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 640,
+									"top": 1120,
+<<<<<<< Updated upstream
+									"width": 1005.17919921875,
+=======
+									"width": 1042.03369140625,
+>>>>>>> Stashed changes
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGS9yRKQPOUm3s="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGS9yRKQPOVQZ8="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGS9yRKQPOWr+M="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGS9yRKQPOXk/I="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGS9yRKQPOYDCM=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yRKQPOSu0s="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yRKP/OQAxU="
+									},
+									"font": "Arial;13;0",
+									"left": 640,
+									"top": 1145,
+<<<<<<< Updated upstream
+									"width": 1005.17919921875,
+=======
+									"width": 1042.03369140625,
+>>>>>>> Stashed changes
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGS9yRKQfOZbrM=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yRKQPOSu0s="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yRKP/OQAxU="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+											"_id": "AAAAAAGTfzNl5qu9m/8=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfzNl2au6yJw="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1160,
+											"width": 1032.03369140625,
+											"height": 13,
+											"text": "+adminLogin(icontact: String, password: String): Admin",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTInIbq7qHLQg=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInIbo7qE4eM="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1160,
+											"width": 995.17919921875,
+=======
+											"top": 1175,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+createAdministrator(firstname: String, lastname: String, mail: String, password: String): Administrator",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTfukCxMWFX9U=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfukCucWClOY="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1175,
+											"width": 995.17919921875,
+=======
+											"top": 1190,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+createTeacher(firstname: String, lastname: String, mail: String, field: String, password: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTInOPSs3TuWc=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInOPQc3QdSs="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1190,
+											"width": 995.17919921875,
+											"height": 13,
+=======
+<<<<<<< Updated upstream
+											"top": 1175,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+createCourse(hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
+=======
+											"top": 1205,
+											"width": 1032.03369140625,
+											"height": 13,
+>>>>>>> Stashed changes
+											"text": "+createCourse(schoolYear: SchoolYear, slot: Date, hour: String, field: String, teacherMail: String): Course",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTfuodu8WWU9s=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTfuodtMWTsMI="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1205,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+createStudent(firstname: String, lastname: String, birth: Date, mail: String, schoolYear: SchoolYear, password: String)",
+=======
+											"top": 1220,
+											"width": 1032.03369140625,
+											"height": 13,
+											"text": "+createStudent(firstname: String, lastname: String, birth: Date, mail: String, schoolYear: SchoolYear, password: String)",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInLR88qcAgg=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInLR5cqZ5LE="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1220,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getAdministratorById(id: int): Administrator",
+=======
+<<<<<<< Updated upstream
+											"top": 1190,
+											"width": 995.17919921875,
+=======
+											"top": 1235,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAdministratorProfile(id: int): Administrator",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIoBJaFJgDlw=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIoBJW1JdlmM="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1235,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getTeacherById(teacherId: int): Teacher",
+=======
+<<<<<<< Updated upstream
+											"top": 1205,
+											"width": 995.17919921875,
+=======
+											"top": 1250,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getTeacherProfile(teacherId: int): Teacher",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+											"_id": "AAAAAAGTftqzDsUmTBs=",
+=======
+											"_id": "AAAAAAGTIoE9mVsz1Lg=",
+>>>>>>> Stashed changes
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+<<<<<<< Updated upstream
+												"$ref": "AAAAAAGTftqy88UjDDs="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1250,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getTeacherByMail(teacherMail: String): Teacher",
+=======
+												"$ref": "AAAAAAGTIoE9k1sw24w="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1220,
+											"width": 995.17919921875,
+=======
+											"top": 1265,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAllTeachersInField(fieldName: String): List<Teacher>",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTImyNqInMCN0=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTImyNlonJTaI="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1265,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getAllTeachers(String: field): List<Teacher>",
+=======
+<<<<<<< Updated upstream
+											"top": 1235,
+											"width": 995.17919921875,
+=======
+											"top": 1280,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAllTeachers(): List<Teacher>",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIn94skaw29g=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIn94oUatJqc="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1280,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1250,
+											"width": 995.17919921875,
+=======
+											"top": 1295,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getCourseDetails(courseId: int): Course",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTImzvR4ujJZU=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTImzvQIugFbo="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1295,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1265,
+											"width": 995.17919921875,
+=======
+											"top": 1310,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAllCoursesInField(fieldName: String): List<Courses>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+											"_id": "AAAAAAGTIm166Yy/UVs=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIm1644y8X5E="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1280,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getAllCourses(): List<Courses>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTIoIBkmGR+q0=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIoIBiWGOaO8="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1310,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getStudentById(studentId: int): Student",
+=======
+<<<<<<< Updated upstream
+											"top": 1295,
+											"width": 995.17919921875,
+=======
+											"top": 1325,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getStudentProfile(studentId: int): Student",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+											"_id": "AAAAAAGTfuXu7sVfGmI=",
+=======
+											"_id": "AAAAAAGTIoNs22pdG+g=",
+>>>>>>> Stashed changes
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+<<<<<<< Updated upstream
+												"$ref": "AAAAAAGTfuXu48VcVTU="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1325,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getStudentByMail(studentMail: String): Teacher",
+=======
+												"$ref": "AAAAAAGTIoNs1WpaWcg="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1310,
+											"width": 995.17919921875,
+=======
+											"top": 1340,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAllStudentsInSchoolYear(schoolYear: SchoolYear): List<Student>",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIimgOzG7xfw=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIimgKTG47z8="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1340,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+getAllStudents(schoolYear: SchoolYear): List<Student>",
+=======
+<<<<<<< Updated upstream
+											"top": 1325,
+											"width": 995.17919921875,
+=======
+											"top": 1355,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+getAllStudents(): List<Student>",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInbPBgtT8TQ=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInbO+gtQ6Wo="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1355,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+updateAdministrator(id: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): Administrator",
+=======
+<<<<<<< Updated upstream
+											"top": 1340,
+											"width": 995.17919921875,
+=======
+											"top": 1370,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+pacthAdminProfile(id: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): Administrator",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInhA5RVRWM0=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInhA0xVOssY="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1370,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+updateTeacher(teacherId: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): TeacherServlet",
+=======
+<<<<<<< Updated upstream
+											"top": 1355,
+											"width": 995.17919921875,
+=======
+											"top": 1385,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+patchTeacherProfile(teacherId: int, newFirstname: String, newLastname: String, newMail: String, newPassword: String): TeacherServlet",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInWPdgZF5BA=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInWPbgZCJuM="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1385,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+updateCourse(courseId: int, slot: Date, hour: String, field: String, teacherMail: String, schoolYear: SchoolYear): Course",
+=======
+<<<<<<< Updated upstream
+											"top": 1370,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+updateCourse(courseId: int, hour: Date, field: String, teacherName: String, courseUnit: CourseUnit): Course",
+=======
+											"top": 1400,
+											"width": 1032.03369140625,
+											"height": 13,
+											"text": "+patchCourse(courseId: int, slot: Date, hour: String, field: String, teacherMail: String, schoolYear: SchoolYear): Course",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInmNvhsTXpM=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInmNshsQQjk="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1400,
+											"width": 995.17919921875,
+											"height": 13,
+											"text": "+updateStudent(int: studentId, newFirstname: String, newLastname: String, newBirth: Date, newContact: String, newSchoolYear: SchoolYear, newPassword: String): Student",
+=======
+<<<<<<< Updated upstream
+											"top": 1385,
+											"width": 995.17919921875,
+=======
+											"top": 1415,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+pacthStudentStudent(int: studentId, newFirstname: String, newLastname: String, newBirth: Date, newContact: String, newSchoolYear: SchoolYear, newPassword: String): Student",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTInv9syLvfBU=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTInv9qiLsWfc="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1415,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1400,
+											"width": 995.17919921875,
+=======
+											"top": 1430,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+deleteAdminstrator(id: int): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIny2JSQIB5A=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIny2ICQFxy4="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1430,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1415,
+											"width": 995.17919921875,
+=======
+											"top": 1445,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+deleteStudent(studentId: int): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIn03ICTWc5Q=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIn03GyTT6DE="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1445,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1430,
+											"width": 995.17919921875,
+=======
+											"top": 1460,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+deleteCourse(courseId: int): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIn2N9CWkXSA=",
+											"_parent": {
+												"$ref": "AAAAAAGS9yRKQfOZbrM="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIn2N7yWhrok="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+<<<<<<< Updated upstream
+											"top": 1460,
+											"width": 995.17919921875,
+=======
+<<<<<<< Updated upstream
+											"top": 1445,
+											"width": 995.17919921875,
+=======
+											"top": 1475,
+											"width": 1032.03369140625,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+											"height": 13,
+											"text": "+deleteTeacher(teacherId: int): void",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 640,
+									"top": 1155,
+<<<<<<< Updated upstream
+									"width": 1005.17919921875,
+									"height": 323
+=======
+<<<<<<< Updated upstream
+									"width": 1005.17919921875,
+									"height": 308
+=======
+									"width": 1042.03369140625,
+									"height": 338
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGS9yRKQfOaVp4=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yRKQPOSu0s="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yRKP/OQAxU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 168,
+									"top": 920,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGS9yRKQfObnqs=",
+									"_parent": {
+										"$ref": "AAAAAAGS9yRKQPOSu0s="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9yRKP/OQAxU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 168,
+									"top": 920,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 640,
+							"top": 1120,
+<<<<<<< Updated upstream
+							"width": 1005.17919921875,
+							"height": 358,
+=======
+<<<<<<< Updated upstream
+							"width": 1005.17919921875,
+							"height": 343,
+=======
+							"width": 1042.03369140625,
+							"height": 373,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+							"nameCompartment": {
+								"$ref": "AAAAAAGS9yRKQPOTiTU="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGS9yRKQPOYDCM="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGS9yRKQfOZbrM="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGS9yRKQfOaVp4="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGS9yRKQfObnqs="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGS9y0P+ft9CzY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGS9y0P+ft+A98=",
+									"_parent": {
+										"$ref": "AAAAAAGS9y0P+ft9CzY="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9y0P+vt/Its=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+ft+A98="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3104,
+											"top": 1792,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9y0P+vuAyVo=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+ft+A98="
+											},
+											"font": "Arial;13;1",
+											"left": 1749,
+											"top": 1551,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "TeacherServlet"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9y0P+vuB59E=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+ft+A98="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3104,
+											"top": 1792,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGS9y0P+vuCirE=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+ft+A98="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 3104,
+											"top": 1792,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1744,
+									"top": 1544,
+									"width": 1002.7353515625,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGS9y0P+vt/Its="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGS9y0P+vuAyVo="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGS9y0P+vuB59E="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGS9y0P+vuCirE="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGS9y0P+vuDVJk=",
+									"_parent": {
+										"$ref": "AAAAAAGS9y0P+ft9CzY="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"font": "Arial;13;0",
+									"left": 1744,
+									"top": 1569,
+									"width": 1002.7353515625,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGS9y0P+vuEObo=",
+									"_parent": {
+										"$ref": "AAAAAAGS9y0P+ft9CzY="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+											"_id": "AAAAAAGTLEbTTUkbzIo=",
+=======
+											"_id": "AAAAAAGTfzGld6uVqj4=",
+>>>>>>> Stashed changes
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+<<<<<<< Updated upstream
+												"$ref": "AAAAAAGTLEbTPkkYZEg="
+=======
+												"$ref": "AAAAAAGTfzGlX6uSrqc="
+>>>>>>> Stashed changes
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1584,
+											"width": 992.7353515625,
+											"height": 13,
+<<<<<<< Updated upstream
+											"text": "+createTeacher(firstname: String, lastname: String, field: String, mail: String, password: String): Teacher",
+=======
+											"text": "+teacherLogin(icontact: String, password: String): Teacher",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLEgZFU7JFP8=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLEgZCU7GagM="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1599,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+getTeacherProfile(id: int): Teacher",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLEjlJFZa4eU=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLEjlGVZXDFE="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1614,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+changePassword(id: int, newPassword: String): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLE0rWnvuXOw=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLE0rS3vrriY="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1629,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+viewTimetable(id: int): List<Courses>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTLFrZ+6w6ibE=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTLFrZ7Kw3wA4="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1644,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+getCourseDetails(courseId: int): Course",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+<<<<<<< Updated upstream
+=======
+											"_id": "AAAAAAGTItRuGaM7BAs=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTItRuB6M4dwo="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1659,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+createReport(schoolYear: SchoolYear, text: String): DataOutputStream<String>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+>>>>>>> Stashed changes
+											"_id": "AAAAAAGTItkVasTgeTI=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTItkVScTdpSE="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+<<<<<<< Updated upstream
+											"top": 1659,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+assessStudents(schoolYear: SchoolYear, field: String, assessName: String, coefficient: float, testDate: Date, grades: HashSet<float>): void",
+=======
+											"top": 1674,
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+assessStudents(schoolYear: SchoolYear, courseUnit: CourseUnit, field: String, assessName: String, coefficient: float, testDate: Date, grades: HashSet<float>): void",
+>>>>>>> Stashed changes
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIt5Eldc4h24=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIt5Ed9c16BI="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+<<<<<<< Updated upstream
+											"top": 1674,
+=======
+											"top": 1689,
+>>>>>>> Stashed changes
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+changeGrades(studentId: int, resultId: int, grades: HashSet<float>): Result",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTIults2F9P1A=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTIultnmF6N3c="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 1749,
+											"top": 1871,
+											"width": 863.38916015625,
+											"height": 13,
+											"text": "+updateAssessments(int: resultId, int: assessmentId, String: assessmentName, coefficient: float): Assessment",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTK8ZMndLQ7uQ=",
+											"_parent": {
+												"$ref": "AAAAAAGS9y0P+vuEObo="
+											},
+											"model": {
+												"$ref": "AAAAAAGTK8ZMidLNjh8="
+											},
+											"font": "Arial;13;0",
+											"left": 1749,
+<<<<<<< Updated upstream
+											"top": 1689,
+=======
+											"top": 1704,
+>>>>>>> Stashed changes
+											"width": 992.7353515625,
+											"height": 13,
+											"text": "+updateStudentAssessments(assessmentIds: HashSet<int>, assessmentsNames: HashSet<String>, coefficients: HashSet<float>, grades: HashSet<float>): void",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1744,
+									"top": 1579,
+									"width": 1002.7353515625,
+<<<<<<< Updated upstream
+									"height": 128
+=======
+									"height": 143
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGS9y0P+vuFZ2M=",
+									"_parent": {
+										"$ref": "AAAAAAGS9y0P+ft9CzY="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1552,
+									"top": 896,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGS9y0P+vuG1i8=",
+									"_parent": {
+										"$ref": "AAAAAAGS9y0P+ft9CzY="
+									},
+									"model": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1552,
+									"top": 896,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 1744,
+							"top": 1544,
+							"width": 1002.7353515625,
+<<<<<<< Updated upstream
+							"height": 163,
+=======
+							"height": 178,
+>>>>>>> Stashed changes
+							"nameCompartment": {
+								"$ref": "AAAAAAGS9y0P+ft+A98="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGS9y0P+vuDVJk="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGS9y0P+vuEObo="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGS9y0P+vuFZ2M="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGS9y0P+vuG1i8="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGTLLKTpNiQq4M=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+<<<<<<< Updated upstream
+							"left": 2072,
+							"top": 1344,
+							"width": 297,
+							"height": 109,
+							"text": "• + showAvalaibleCourses(...): List<Course>\nIt shows courses scheduled after the minimumDate which is the moment the student sends the request.\n• + viewCourseUnitResults(in id:int): HashMap<CourseUnit, float>\nIt shows the student's means in all course units."
+=======
+							"left": 2080,
+							"top": 1344,
+							"width": 297,
+							"height": 178,
+							"text": "• + showAvalaibleCourses(...): List<Course>\nIt shows courses scheduled after the minimumDate which is the moment the student sends the request.\n• + viewCourseUnitResults(in id:int): HashMap<CourseUnit, float>\nIt shows the student's means in all course units.\n• + getTranscriptOfGrades(in DataOutputStream): void\nIt generates a transcript of the student grades, appreciation of academic skills depend on the student's mean"
+>>>>>>> Stashed changes
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGTLLSC+tiY4p8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGS9yAKwvM013A="
+							},
+							"tail": {
+								"$ref": "AAAAAAGTLLKTpNiQq4M="
+							},
+							"lineStyle": 1,
+<<<<<<< Updated upstream
+							"points": "2220:1343;2221:1298"
+=======
+<<<<<<< Updated upstream
+							"points": "2226:1343;2225:1313"
+=======
+							"points": "2220:1343;2221:1283"
+>>>>>>> Stashed changes
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGTfvIFCMX0Gg0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1032,
+							"top": 1032,
+							"width": 248,
+							"height": 64,
+							"text": "• all method getAll...() parameters are used for filtering, they may be facultative and it will be checked by the AdminService "
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGTfvN7ZcX7H5M=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGS9yRKQPOSu0s="
+							},
+							"tail": {
+								"$ref": "AAAAAAGTfvIFCMX0Gg0="
+							},
+							"lineStyle": 1,
+<<<<<<< Updated upstream
+							"points": "1153:1096;1152:1119"
+=======
+							"points": "1156:1096;1156:1119"
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS9yAKwfMy4/M=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "StudentServlet",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS9yvYavPo7ao=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "student_list",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9yvYavPpszo=",
+								"_parent": {
+									"$ref": "AAAAAAGS9yvYavPo7ao="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9yvYa/Pqg6E=",
+								"_parent": {
+									"$ref": "AAAAAAGS9yvYavPo7ao="
+								},
+								"name": "student_list",
+								"reference": {
+									"$ref": "AAAAAAGS9yRKP/OQAxU="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "*"
+							},
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS92wS733NqIg=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS92wS733O0gs=",
+								"_parent": {
+									"$ref": "AAAAAAGS92wS733NqIg="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS92wS733P5lo=",
+								"_parent": {
+									"$ref": "AAAAAAGS92wS733NqIg="
+								},
+								"name": "student_list",
+								"reference": {
+									"$ref": "AAAAAAGS9yRKP/OQAxU="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "*"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGTItH3OJdcS+o=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "schoolYear",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTItH3OJddZto=",
+								"_parent": {
+									"$ref": "AAAAAAGTItH3OJdcS+o="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTItH3OJde82g=",
+								"_parent": {
+									"$ref": "AAAAAAGTItH3OJdcS+o="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS92AL79vmbUs="
+								},
+								"navigable": "navigable",
+								"multiplicity": "1"
+							},
+							"visibility": "private"
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS9zlD3BW7HUE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "group"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLF2rRdC8LnY=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+<<<<<<< Updated upstream
+							"name": "login",
+=======
+<<<<<<< Updated upstream
+							"name": "createStudent",
+=======
+							"name": "studentLogin",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEXw28=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+<<<<<<< Updated upstream
+									"name": "icontact",
+=======
+									"name": "firstname",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEYJk8=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+<<<<<<< Updated upstream
+=======
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEZnyE=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+									"name": "birth",
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEaJfQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+									"name": "contact",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEbKJk=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBdEcRvI=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+>>>>>>> Stashed changes
+									"name": "password",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF8VBtEdCFI=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF2rRdC8LnY="
+									},
+									"type": "Student",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLF9bkdGszh8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "getStudentProfile",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF/FLNHpT64=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF9bkdGszh8="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLF/FLNHqI/g=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF9bkdGszh8="
+									},
+									"type": "Student",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLF/F+NIFi08=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "changePassword",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGLogtVJdWM=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF/F+NIFi08="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGLogtVKAOI=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF/F+NIFi08="
+									},
+									"name": "newPassword",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGLog9VP9fY=",
+									"_parent": {
+										"$ref": "AAAAAAGTLF/F+NIFi08="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTMPoNj9WGgqE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "showAvailableCourses",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTMPuNx9WN4zQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTMPoNj9WGgqE="
+									},
+<<<<<<< Updated upstream
+									"name": "field",
+									"type": "String"
+=======
+									"name": "courseUnit",
+									"type": {
+										"$ref": "AAAAAAGS963+ULAbWHk="
+									}
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTMPuNx9WOejA=",
+									"_parent": {
+										"$ref": "AAAAAAGTMPoNj9WGgqE="
+									},
+<<<<<<< Updated upstream
+									"name": "minimumWeekDate",
+									"type": "Date"
+=======
+									"name": "field",
+									"type": "String"
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTMPuNx9WPO4Q=",
+									"_parent": {
+										"$ref": "AAAAAAGTMPoNj9WGgqE="
+									},
+									"type": "List<Course>",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTMg6TkSSHyf4=",
+									"_parent": {
+										"$ref": "AAAAAAGTMPoNj9WGgqE="
+									},
+<<<<<<< Updated upstream
+									"name": "maximumWeekDate",
+=======
+									"name": "minimumDate",
+>>>>>>> Stashed changes
+									"type": "Date"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTItWyiKUnsfU=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "signUpCourse",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItdg86gi7YY=",
+									"_parent": {
+										"$ref": "AAAAAAGTItWyiKUnsfU="
+									},
+									"name": "addCourse",
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItdg86gjk3k=",
+									"_parent": {
+										"$ref": "AAAAAAGTItWyiKUnsfU="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLOKRS9jswDg=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "unsignForCourse",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLOMS0djzkLY=",
+									"_parent": {
+										"$ref": "AAAAAAGTLOKRS9jswDg="
+									},
+									"name": "unsignCourse",
+									"type": "course"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLOMS0dj0kRc=",
+									"_parent": {
+										"$ref": "AAAAAAGTLOKRS9jswDg="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLGNwOdhA0fM=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "viewTimetable",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGPdiNhHtL8=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGNwOdhA0fM="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGPdidhIEyQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGNwOdhA0fM="
+									},
+									"type": "List<Course>",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLGPeVNhLdJQ=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "getCourseDetails",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGsiyNhTdmA=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGPeVNhLdJQ="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLGsiydhURxA=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGPeVNhLdJQ="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLGsjmdhXFR4=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+<<<<<<< Updated upstream
+							"name": "viewResultsInField",
+=======
+							"name": "viewCourseUnitResults",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLHw0/thlgM0=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGsjmdhXFR4="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLHw0/thmT2s=",
+									"_parent": {
+										"$ref": "AAAAAAGTLGsjmdhXFR4="
+									},
+									"type": "Map",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLHBtMdhdYho=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+<<<<<<< Updated upstream
+							"name": "viewFieldAssessments",
+=======
+							"name": "viewFieldGrades",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLKlUmdhq/hY=",
+									"_parent": {
+										"$ref": "AAAAAAGTLHBtMdhdYho="
+									},
+									"name": "courseUnit",
+									"type": {
+										"$ref": "AAAAAAGS963+ULAbWHk="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLBd0thzejQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTLHBtMdhdYho="
+									},
+									"name": "field",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLBd0th0YXg=",
+									"_parent": {
+										"$ref": "AAAAAAGTLHBtMdhdYho="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLBd0th1K1Y=",
+									"_parent": {
+										"$ref": "AAAAAAGTLHBtMdhdYho="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9108xshChwg="
+									},
+									"direction": "return"
+								}
+							]
+<<<<<<< Updated upstream
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTfu15SsXWA2E=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yAKwfMy4/M="
+							},
+							"name": "getTranscriptOfGrades",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfu5pvsXdcWo=",
+									"_parent": {
+										"$ref": "AAAAAAGTfu15SsXWA2E="
+									},
+									"type": "void",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfu7miMXmHbc=",
+									"_parent": {
+										"$ref": "AAAAAAGTfu15SsXWA2E="
+									},
+									"name": "DataOutputStream",
+									"type": ""
+								}
+							]
+=======
+>>>>>>> Stashed changes
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS9yRKP/OQAxU=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "AdministratorServlet",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS94Z77EYAjXw=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94Z77EYBnuk=",
+								"_parent": {
+									"$ref": "AAAAAAGS94Z77EYAjXw="
+								},
+								"name": "student_list",
+								"reference": {
+									"$ref": "AAAAAAGS9yRKP/OQAxU="
+								},
+								"visibility": "private",
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94Z77EYCIHg=",
+								"_parent": {
+									"$ref": "AAAAAAGS94Z77EYAjXw="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								},
+								"navigable": "navigable"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS94cv7lqfbbE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94cv7lqgyjs=",
+								"_parent": {
+									"$ref": "AAAAAAGS94cv7lqfbbE="
+								},
+								"name": "teacher_list",
+								"reference": {
+									"$ref": "AAAAAAGS9yRKP/OQAxU="
+								},
+								"visibility": "private",
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94cv7lqhSmQ=",
+								"_parent": {
+									"$ref": "AAAAAAGS94cv7lqfbbE="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9y0P+ft7n9Q="
+								},
+								"navigable": "navigable"
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+=======
+							"_id": "AAAAAAGTfzNl2au6yJw=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "adminLogin",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfzOzkqvBt0k=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzNl2au6yJw="
+									},
+									"name": "icontact",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfzOzk6vCZPA=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzNl2au6yJw="
+									},
+									"name": "password",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfzOzk6vDLF8=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzNl2au6yJw="
+									},
+									"type": "Admin",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTInIbo7qE4eM=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createAdministrator",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInJHCb32Gbc=",
+									"_parent": {
+										"$ref": "AAAAAAGTInIbo7qE4eM="
+									},
+									"name": "firstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInJHCb330Lk=",
+									"_parent": {
+										"$ref": "AAAAAAGTInIbo7qE4eM="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInJHCb34KKM=",
+									"_parent": {
+										"$ref": "AAAAAAGTInIbo7qE4eM="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInJHCb35fZs=",
+									"_parent": {
+										"$ref": "AAAAAAGTInIbo7qE4eM="
+									},
+									"name": "password",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLfrKtilxMQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTInIbo7qE4eM="
+									},
+									"type": "Administrator",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+							"_id": "AAAAAAGTfukCucWClOY=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createTeacher",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWJJ08=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "firstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWK5/w=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWLRdc=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWMe6o=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "field",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuodHsWNBH8=",
+									"_parent": {
+										"$ref": "AAAAAAGTfukCucWClOY="
+									},
+									"name": "password",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+=======
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTInOPQc3QdSs=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createCourse",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInUZjgENJE4=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+<<<<<<< Updated upstream
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+=======
+									"name": "hour",
+									"type": "Date"
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInUZjgEOsn8=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+<<<<<<< Updated upstream
+									"name": "slot",
+									"type": "Date"
+=======
+									"name": "field",
+									"type": "String"
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInUZjgEPwos=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+<<<<<<< Updated upstream
+									"name": "hour",
+=======
+									"name": "teacherName",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInUZjwEQLTs=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+<<<<<<< Updated upstream
+									"name": "field",
+									"type": "String"
+=======
+									"name": "courseUnit",
+									"type": {
+										"$ref": "AAAAAAGS963+ULAbWHk="
+									}
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLlrMNissuQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									},
+									"direction": "return"
+<<<<<<< Updated upstream
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTft2RisVAtUw=",
+									"_parent": {
+										"$ref": "AAAAAAGTInOPQc3QdSs="
+									},
+									"name": "teacherMail",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTfuodtMWTsMI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "createStudent",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWb8ck=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "firstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWcsMs=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWdpvU=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "birth",
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWe02k=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWftaU=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfur5VcWgazg=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuodtMWTsMI="
+									},
+									"name": "password",
+									"type": "String"
+=======
+>>>>>>> Stashed changes
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInLR5cqZ5LE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "getAdministratorById",
+=======
+							"name": "getAdministratorProfile",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInNV+MtykFo=",
+									"_parent": {
+										"$ref": "AAAAAAGTInLR5cqZ5LE="
+									},
+									"type": "Administrator",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoL9mGk6YQI=",
+									"_parent": {
+										"$ref": "AAAAAAGTInLR5cqZ5LE="
+									},
+									"name": "id",
+									"type": "int"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIoBJW1JdlmM=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "getTeacherById",
+=======
+							"name": "getTeacherProfile",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoDOwFQmR6M=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoBJW1JdlmM="
+									},
+									"name": "teacherId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoDOwVQnsZ0=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoBJW1JdlmM="
+									},
+									"type": "Teacher",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+							"_id": "AAAAAAGTftqy88UjDDs=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getTeacherByMail",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTftsSwcUqhwA=",
+									"_parent": {
+										"$ref": "AAAAAAGTftqy88UjDDs="
+									},
+									"name": "teacherMail",
+=======
+							"_id": "AAAAAAGTIoE9k1sw24w=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllTeachersInField",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoGC7Fu+JQU=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoE9k1sw24w="
+									},
+									"name": "fieldName",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+<<<<<<< Updated upstream
+									"_id": "AAAAAAGTftsSwsUrn4g=",
+									"_parent": {
+										"$ref": "AAAAAAGTftqy88UjDDs="
+									},
+									"type": "Teacher",
+=======
+									"_id": "AAAAAAGTIoGC7Fu/VGs=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoE9k1sw24w="
+									},
+									"type": "List<Teacher>",
+>>>>>>> Stashed changes
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTImyNlonJTaI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllTeachers",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTImzu8YtfxNk=",
+									"_parent": {
+										"$ref": "AAAAAAGTImyNlonJTaI="
+									},
+									"type": "List<Teacher>",
+									"direction": "return"
+<<<<<<< Updated upstream
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTft5Jw8VIZOw=",
+									"_parent": {
+										"$ref": "AAAAAAGTImyNlonJTaI="
+									},
+									"name": "String",
+									"type": "field"
+=======
+>>>>>>> Stashed changes
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIn94oUatJqc=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getCourseDetails",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn/dN0eGCGk=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn94oUatJqc="
+									},
+									"name": "courseId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn/dN0eHkig=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn94oUatJqc="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTImzvQIugFbo=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllCoursesInField",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIm16joxkRbo=",
+									"_parent": {
+										"$ref": "AAAAAAGTImzvQIugFbo="
+									},
+									"name": "fieldName",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIm16j4xlk/k=",
+									"_parent": {
+										"$ref": "AAAAAAGTImzvQIugFbo="
+									},
+									"type": "List<Courses>",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+=======
+							"_id": "AAAAAAGTIm1644y8X5E=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllCourses",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIm3sCZaGp3o=",
+									"_parent": {
+										"$ref": "AAAAAAGTIm1644y8X5E="
+									},
+									"type": "List<Courses>",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTIoIBiWGOaO8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "getStudentById",
+=======
+							"name": "getStudentProfile",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoJLtmIcKnM=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoIBiWGOaO8="
+									},
+									"name": "studentId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoJLtmIdN6Y=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoIBiWGOaO8="
+									},
+									"type": "Student",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+							"_id": "AAAAAAGTfuXu48VcVTU=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getStudentByMail",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuY53MVj05E=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuXu48VcVTU="
+									},
+									"name": "studentMail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuY53MVkrGQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTfuXu48VcVTU="
+									},
+									"type": "Teacher",
+=======
+							"_id": "AAAAAAGTIoNs1WpaWcg=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllStudentsInSchoolYear",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoRIZIg0I04=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoNs1WpaWcg="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoRIZIg1IGw=",
+									"_parent": {
+										"$ref": "AAAAAAGTIoNs1WpaWcg="
+									},
+									"type": "List<Student>",
+>>>>>>> Stashed changes
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIimgKTG47z8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "getAllStudents",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIkENRUTNhvM=",
+									"_parent": {
+										"$ref": "AAAAAAGTIimgKTG47z8="
+									},
+									"type": "List<Student>",
+									"direction": "return"
+<<<<<<< Updated upstream
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuBpQ8VU1Os=",
+									"_parent": {
+										"$ref": "AAAAAAGTIimgKTG47z8="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+=======
+>>>>>>> Stashed changes
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInbO+gtQ6Wo=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "updateAdministrator",
+=======
+							"name": "pacthAdminProfile",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInd1NQ0ZtPQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"type": "Administrator",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIne/6A+Txck=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIne/6A+Uvhs=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"name": "newFirstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIne/6A+Vwok=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"name": "newLastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIne/6A+WPkQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"name": "newMail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIne/6A+XEyA=",
+									"_parent": {
+										"$ref": "AAAAAAGTInbO+gtQ6Wo="
+									},
+									"name": "newPassword",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInhA0xVOssY=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "updateTeacher",
+=======
+							"name": "patchTeacherProfile",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInlYxBmfO0M=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"name": "teacherId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInlYxBmgmXA=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"name": "newFirstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInlYxBmhv9w=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"name": "newLastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInlYxBmiJBM=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9y0P+ft7n9Q="
+									},
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIoc82ZM0aBE=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"name": "newMail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLL8tbNi/mu8=",
+									"_parent": {
+										"$ref": "AAAAAAGTInhA0xVOssY="
+									},
+									"name": "newPassword",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInWPbgZCJuM=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "updateCourse",
+=======
+							"name": "patchCourse",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInZ0Fgg5ONU=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									},
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInamWgo6Lmk=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+									"name": "courseId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInamXAo78s0=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+<<<<<<< Updated upstream
+									"name": "slot",
+=======
+									"name": "hour",
+>>>>>>> Stashed changes
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInamXAo8obo=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+<<<<<<< Updated upstream
+									"name": "hour",
+=======
+									"name": "field",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInamXQo9EOY=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+<<<<<<< Updated upstream
+									"name": "field",
+=======
+									"name": "teacherName",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIocK/pIyrLE=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+<<<<<<< Updated upstream
+									"name": "teacherMail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfuc+GsVoU3Q=",
+									"_parent": {
+										"$ref": "AAAAAAGTInWPbgZCJuM="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+=======
+									"name": "courseUnit",
+									"type": {
+										"$ref": "AAAAAAGS963+ULAbWHk="
+>>>>>>> Stashed changes
+									}
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInmNshsQQjk=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+<<<<<<< Updated upstream
+							"name": "updateStudent",
+=======
+							"name": "pacthStudentStudent",
+>>>>>>> Stashed changes
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInqrCyGn0Ww=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "int",
+									"type": "studentId"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInqrCyGoBqU=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newFirstname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInqrCyGp+E4=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newLastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInqrCyGqIAk=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newBirth",
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTInqrDCGrEG4=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newContact",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIobLo5Ew+SE=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newSchoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLMH32tjDNZs=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"name": "newPassword",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLMJmzNjHk60=",
+									"_parent": {
+										"$ref": "AAAAAAGTInmNshsQQjk="
+									},
+									"type": "Student",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTInv9qiLsWfc=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "deleteAdminstrator",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIny1wSPFrxk=",
+									"_parent": {
+										"$ref": "AAAAAAGTInv9qiLsWfc="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIny1wSPGQwM=",
+									"_parent": {
+										"$ref": "AAAAAAGTInv9qiLsWfc="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIny2ICQFxy4=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "deleteStudent",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn02viSTcbg=",
+									"_parent": {
+										"$ref": "AAAAAAGTIny2ICQFxy4="
+									},
+									"name": "studentId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn02viSUsxk=",
+									"_parent": {
+										"$ref": "AAAAAAGTIny2ICQFxy4="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIn03GyTT6DE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "deleteCourse",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn2NZyVh7Rw=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn03GyTT6DE="
+									},
+									"name": "courseId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn2NZyVicsg=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn03GyTT6DE="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIn2N7yWhrok=",
+							"_parent": {
+								"$ref": "AAAAAAGS9yRKP/OQAxU="
+							},
+							"name": "deleteTeacher",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn3/9CYv5do=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn2N7yWhrok="
+									},
+									"name": "teacherId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIn3/9CYwwy0=",
+									"_parent": {
+										"$ref": "AAAAAAGTIn2N7yWhrok="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS9y0P+ft7n9Q=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "TeacherServlet",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS9zGqsAAnYZ8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "teacher_list",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9zGqsAAoGro=",
+								"_parent": {
+									"$ref": "AAAAAAGS9zGqsAAnYZ8="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9y0P+ft7n9Q="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9zGqsAApKvg=",
+								"_parent": {
+									"$ref": "AAAAAAGS9zGqsAAnYZ8="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yRKP/OQAxU="
+								},
+								"navigable": "navigable",
+								"multiplicity": "*"
+							},
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS94YVyEEGxtw=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94YVyEEHFVY=",
+								"_parent": {
+									"$ref": "AAAAAAGS94YVyEEGxtw="
+								},
+								"name": "student_list",
+								"reference": {
+									"$ref": "AAAAAAGS9y0P+ft7n9Q="
+								},
+								"visibility": "private",
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS94YVyEEIv6I=",
+								"_parent": {
+									"$ref": "AAAAAAGS94YVyEEGxtw="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								},
+								"navigable": "navigable"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGTIomB6c8CydU=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIomB6c8D4v0=",
+								"_parent": {
+									"$ref": "AAAAAAGTIomB6c8CydU="
+								},
+								"name": "courses_list",
+								"reference": {
+									"$ref": "AAAAAAGS9y0P+ft7n9Q="
+								},
+								"visibility": "private",
+								"navigable": "notNavigable",
+								"multiplicity": "0..*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIomB6c8EYtM=",
+								"_parent": {
+									"$ref": "AAAAAAGTIomB6c8CydU="
+								},
+								"name": "teacher",
+								"reference": {
+									"$ref": "AAAAAAGS9zVp4RH7ICk="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"aggregation": "composite",
+								"multiplicity": "1"
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+							"_id": "AAAAAAGTLEbTPkkYZEg=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "createTeacher",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEey8klV1i4=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"name": "firstname",
+=======
+							"_id": "AAAAAAGTfzGlX6uSrqc=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "teacherLogin",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfzJESquZB3I=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzGlX6uSrqc="
+									},
+									"name": "icontact",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+<<<<<<< Updated upstream
+									"_id": "AAAAAAGTLEey8klWbr0=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"name": "lastname",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEey8klXZ/o=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"name": "field",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLFKgOH/0IjQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"type": "Teacher",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLFibPaVWlhM=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"name": "mail",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLLWcEtidvZg=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEbTPkkYZEg="
+									},
+									"name": "password",
+									"type": "String"
+=======
+									"_id": "AAAAAAGTfzJES6uaxcs=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzGlX6uSrqc="
+									},
+									"name": "password",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTfzJES6ubI7s=",
+									"_parent": {
+										"$ref": "AAAAAAGTfzGlX6uSrqc="
+									},
+									"type": "Teacher",
+									"direction": "return"
+>>>>>>> Stashed changes
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLEgZCU7GagM=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "getTeacherProfile",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEjkTFY7LmI=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEgZCU7GagM="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEjkTVY8P8Y=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEgZCU7GagM="
+									},
+									"type": "Teacher",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLEjlGVZXDFE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "changePassword",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEqCaWK+Hmg=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEjlGVZXDFE="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEqCaWK/sa4=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEjlGVZXDFE="
+									},
+									"name": "newPassword",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLEqCamLCu3Y=",
+									"_parent": {
+										"$ref": "AAAAAAGTLEjlGVZXDFE="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLE0rS3vrriY=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "viewTimetable",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLE6F2XxG+CY=",
+									"_parent": {
+										"$ref": "AAAAAAGTLE0rS3vrriY="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLE6F2XxHnEo=",
+									"_parent": {
+										"$ref": "AAAAAAGTLE0rS3vrriY="
+									},
+									"type": "List<Courses>",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTLFrZ7Kw3wA4=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "getCourseDetails",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLFt1Rax05Yk=",
+									"_parent": {
+										"$ref": "AAAAAAGTLFrZ7Kw3wA4="
+									},
+									"name": "courseId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTLFt1Rqx1W+o=",
+									"_parent": {
+										"$ref": "AAAAAAGTLFrZ7Kw3wA4="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9zVp4RH7ICk="
+									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+<<<<<<< Updated upstream
+=======
+							"_id": "AAAAAAGTItRuB6M4dwo=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "createReport",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItVdqaPD3mM=",
+									"_parent": {
+										"$ref": "AAAAAAGTItRuB6M4dwo="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItVdqqPEFfA=",
+									"_parent": {
+										"$ref": "AAAAAAGTItRuB6M4dwo="
+									},
+									"type": "DataOutputStream<String>",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIuFaaOyt1IE=",
+									"_parent": {
+										"$ref": "AAAAAAGTItRuB6M4dwo="
+									},
+									"name": "text",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+>>>>>>> Stashed changes
+							"_id": "AAAAAAGTItkVScTdpSE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "assessStudents",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItznStQgkVE=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+									"name": "schoolYear",
+									"type": {
+										"$ref": "AAAAAAGS92AL79vmbUs="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItznS9Qhy7s=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+<<<<<<< Updated upstream
+									"name": "field",
+									"type": "String"
+=======
+									"name": "courseUnit",
+									"type": {
+										"$ref": "AAAAAAGS963+ULAbWHk="
+									}
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItznS9QiYH8=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+<<<<<<< Updated upstream
+									"name": "assessName",
+=======
+									"name": "field",
+>>>>>>> Stashed changes
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTItznTNQj29I=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+<<<<<<< Updated upstream
+									"name": "coefficient",
+									"type": "float"
+=======
+									"name": "assessName",
+									"type": "String"
+>>>>>>> Stashed changes
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIt4otNb3pOA=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+									"type": "void",
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK94qiBAJQU4=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+<<<<<<< Updated upstream
+=======
+									"name": "coefficient",
+									"type": "float"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK94qiRAKIWI=",
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+>>>>>>> Stashed changes
+									"name": "testDate",
+									"type": "Date"
+								},
+								{
+									"_type": "UMLParameter",
+<<<<<<< Updated upstream
+									"_id": "AAAAAAGTK94qiRAKIWI=",
+=======
+									"_id": "AAAAAAGTK94qiRALU2k=",
+>>>>>>> Stashed changes
+									"_parent": {
+										"$ref": "AAAAAAGTItkVScTdpSE="
+									},
+									"name": "grades",
+									"type": "HashSet<float>"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIt5Ed9c16BI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "changeGrades",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIt8MTNeiTjE=",
+									"_parent": {
+										"$ref": "AAAAAAGTIt5Ed9c16BI="
+									},
+									"name": "studentId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIt+mUdhrwSw=",
+									"_parent": {
+										"$ref": "AAAAAAGTIt5Ed9c16BI="
+									},
+									"name": "resultId",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIt+mUdhszPA=",
+									"_parent": {
+										"$ref": "AAAAAAGTIt5Ed9c16BI="
+									},
+									"name": "grades",
+									"type": "HashSet<float>"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIt+mUthwWNU=",
+									"_parent": {
+										"$ref": "AAAAAAGTIt5Ed9c16BI="
+									},
+									"type": {
+										"$ref": "AAAAAAGS9108xshChwg="
+									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTIultnmF6N3c=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "updateAssessments",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIuprhGPBVPM=",
+									"_parent": {
+										"$ref": "AAAAAAGTIultnmF6N3c="
+									},
+									"name": "int",
+									"type": "resultId"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIuprhWPCORg=",
+									"_parent": {
+										"$ref": "AAAAAAGTIultnmF6N3c="
+									},
+									"name": "int",
+									"type": "assessmentId"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIuprhWPDHgQ=",
+									"_parent": {
+										"$ref": "AAAAAAGTIultnmF6N3c="
+									},
+									"name": "String",
+									"type": "assessmentName"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTIuprhWPEyf4=",
+									"_parent": {
+										"$ref": "AAAAAAGTIultnmF6N3c="
+									},
+									"type": {
+										"$ref": "AAAAAAGTIiMarw2sbMw="
+									},
+									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK78cF6/YUpU=",
+									"_parent": {
+										"$ref": "AAAAAAGTIultnmF6N3c="
+									},
+									"name": "coefficient",
+									"type": "float"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTK8ZMidLNjh8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9y0P+ft7n9Q="
+							},
+							"name": "updateStudentAssessments",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK9A1XuFcKcU=",
+									"_parent": {
+										"$ref": "AAAAAAGTK8ZMidLNjh8="
+									},
+									"name": "assessmentIds",
+									"type": "HashSet<int>"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK9A1XuFdZYM=",
+									"_parent": {
+										"$ref": "AAAAAAGTK8ZMidLNjh8="
+									},
+									"name": "assessmentsNames",
+									"type": "HashSet<String>"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK9A1X+Fe8FE=",
+									"_parent": {
+										"$ref": "AAAAAAGTK8ZMidLNjh8="
+									},
+									"name": "coefficients",
+									"type": "HashSet<float>"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK9A1X+Ffg88=",
+									"_parent": {
+										"$ref": "AAAAAAGTK8ZMidLNjh8="
+									},
+									"name": "grades",
+									"type": "HashSet<float>"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGTK9A1X+FgG9w=",
+									"_parent": {
+										"$ref": "AAAAAAGTK8ZMidLNjh8="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS9zVp4RH7ICk=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Course",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS9z3jdyGH+DI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9z3jdyGIsVY=",
+								"_parent": {
+									"$ref": "AAAAAAGS9z3jdyGH+DI="
+								},
+								"name": "students",
+								"reference": {
+									"$ref": "AAAAAAGS9zVp4RH7ICk="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS9z3jdyGJPgI=",
+								"_parent": {
+									"$ref": "AAAAAAGS9z3jdyGH+DI="
+								},
+								"name": "courses",
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								},
+								"stereotype": "course",
+								"visibility": "private",
+								"navigable": "notNavigable",
+								"multiplicity": "*"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS91HlLTT2n+E=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS91HlLTT317Y=",
+								"_parent": {
+									"$ref": "AAAAAAGS91HlLTT2n+E="
+								},
+								"name": "teacher",
+								"reference": {
+									"$ref": "AAAAAAGS9zVp4RH7ICk="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "0..1"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS91HlLTT425Y=",
+								"_parent": {
+									"$ref": "AAAAAAGS91HlLTT2n+E="
+								},
+								"name": "course_list",
+								"reference": {
+									"$ref": "AAAAAAGS9y0P+ft7n9Q="
+								},
+								"visibility": "private",
+								"navigable": "notNavigable",
+								"multiplicity": "*"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS95s67iYYWcE=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS95s67iYZLGg=",
+								"_parent": {
+									"$ref": "AAAAAAGS95s67iYYWcE="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9zVp4RH7ICk="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS95s67iYagBU=",
+								"_parent": {
+									"$ref": "AAAAAAGS95s67iYYWcE="
+								},
+								"name": "course_list",
+								"reference": {
+									"$ref": "AAAAAAGS95mKc/tn0E8="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "*"
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS9zXM7RPo+H8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"name": "int",
+							"visibility": "private",
+							"type": "id {id}"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS9zswCBsWcjg=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"name": "Date",
+							"visibility": "private",
+							"type": "hour"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS97DwPvuWF9A=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "field"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS97ARpur129M=",
+							"_parent": {
+								"$ref": "AAAAAAGS9zVp4RH7ICk="
+							},
+							"name": "CourseUnit",
+							"visibility": "private",
+							"type": "unitName"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS9108xshChwg=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Result",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS912PjtBYfTk=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS912PjtBZu9k=",
+								"_parent": {
+									"$ref": "AAAAAAGS912PjtBYfTk="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9108xshChwg="
+								},
+								"navigable": "notNavigable",
+								"multiplicity": "1"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS912PjtBaS2Q=",
+								"_parent": {
+									"$ref": "AAAAAAGS912PjtBYfTk="
+								},
+								"name": "results",
+								"reference": {
+									"$ref": "AAAAAAGS9yAKwfMy4/M="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"aggregation": "composite",
+								"multiplicity": "*"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGTIiSEpxSlPAI=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIiSEpxSmUbc=",
+								"_parent": {
+									"$ref": "AAAAAAGTIiSEpxSlPAI="
+								},
+								"name": "grades",
+								"reference": {
+									"$ref": "AAAAAAGS9108xshChwg="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"aggregation": "composite",
+								"multiplicity": "1..*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIiSEpxSnsfA=",
+								"_parent": {
+									"$ref": "AAAAAAGTIiSEpxSlPAI="
+								},
+								"reference": {
+									"$ref": "AAAAAAGTIiMarw2sbMw="
+								},
+								"navigable": "notNavigable",
+								"aggregation": "composite"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGTIiZoDiasTbs=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"name": "grades",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIiZoDiatKnk=",
+								"_parent": {
+									"$ref": "AAAAAAGTIiZoDiasTbs="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9108xshChwg="
+								},
+								"visibility": "private",
+								"navigable": "notNavigable",
+								"multiplicity": "1..*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTIiZoDiau5pQ=",
+								"_parent": {
+									"$ref": "AAAAAAGTIiZoDiasTbs="
+								},
+								"reference": {
+									"$ref": "AAAAAAGTIiMarw2sbMw="
+								},
+								"navigable": "navigable",
+								"aggregation": "composite"
+							},
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGTItFbf5VFm+0=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"name": "courseUnit",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTItFbf5VGGkc=",
+								"_parent": {
+									"$ref": "AAAAAAGTItFbf5VFm+0="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS9108xshChwg="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGTItFbf5VH868=",
+								"_parent": {
+									"$ref": "AAAAAAGTItFbf5VFm+0="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS963+ULAbWHk="
+								},
+								"navigable": "navigable",
+								"multiplicity": "1"
+							},
+							"visibility": "private"
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS913NMdPzAW8=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "field"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS97Fr2v8iewo=",
+							"_parent": {
+								"$ref": "AAAAAAGS9108xshChwg="
+							},
+							"name": "CourseUnit",
+							"visibility": "private",
+							"type": "courseUnit"
+						}
+					]
+				},
+				{
+					"_type": "UMLEnumeration",
+					"_id": "AAAAAAGS92AL79vmbUs=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "SchoolYear"
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS93QwkI6APP4=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Grade",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGS93UdAp2lpuk=",
+							"_parent": {
+								"$ref": "AAAAAAGS93QwkI6APP4="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS93UdAp2mTj8=",
+								"_parent": {
+									"$ref": "AAAAAAGS93UdAp2lpuk="
+								},
+								"reference": {
+									"$ref": "AAAAAAGS93QwkI6APP4="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGS93UdAp2n248=",
+								"_parent": {
+									"$ref": "AAAAAAGS93UdAp2lpuk="
+								},
+								"name": "grades",
+								"reference": {
+									"$ref": "AAAAAAGS9108xshChwg="
+								},
+								"visibility": "private",
+								"aggregation": "composite",
+								"multiplicity": "*"
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS93Sa1ZONZ5k=",
+							"_parent": {
+								"$ref": "AAAAAAGS93QwkI6APP4="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "field"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS93RsT5JBWKI=",
+							"_parent": {
+								"$ref": "AAAAAAGS93QwkI6APP4="
+							},
+							"name": "float",
+							"visibility": "private",
+							"type": "value"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGS95mKc/tn0E8=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Field",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGS95ogZAOMcpE=",
+							"_parent": {
+								"$ref": "AAAAAAGS95mKc/tn0E8="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "name"
+						}
+					]
+				},
+				{
+					"_type": "UMLEnumeration",
+					"_id": "AAAAAAGS963+ULAbWHk=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "CourseUnit"
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGTIiMarw2sbMw=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Assessment",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTIiNNhQ8ac+k=",
+							"_parent": {
+								"$ref": "AAAAAAGTIiMarw2sbMw="
+							},
+							"name": "String",
+							"visibility": "private",
+							"type": "assessName"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTIlKThkkr5iU=",
+							"_parent": {
+								"$ref": "AAAAAAGTIiMarw2sbMw="
+							},
+							"name": "float",
+							"visibility": "private",
+							"type": "coefficient"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTIu+fJHd0diI=",
+							"_parent": {
+								"$ref": "AAAAAAGTIiMarw2sbMw="
+							},
+							"name": "Date",
+							"visibility": "private",
+							"type": "testDate"
+						},
+						{
+							"_type": "UMLPort",
+							"_id": "AAAAAAGTIvTJlXiljJ0=",
+							"_parent": {
+								"$ref": "AAAAAAGTIiMarw2sbMw="
+							},
+							"name": "float",
+							"visibility": "private",
+							"type": "grade"
+						}
+					]
+				}
+			]
+		}
+	]
+}
