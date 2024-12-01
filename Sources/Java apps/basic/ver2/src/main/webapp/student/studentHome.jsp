@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil Étudiant</title>
-  <link rel="stylesheet" href="styleStudentHome.css">
+  <link rel="stylesheet" href="<%= request.getContextPath() %>/student/styleStudentHome.css">
 </head>
 <body>
 <div class="container">
@@ -13,19 +13,19 @@
   <p>Bienvenue sur votre espace étudiant ! Choisissez une option :</p>
 
   <!-- Boutons pour les différentes sections -->
-  <form action="studentProfile.jsp" method="get">
+  <form action="<%= request.getContextPath() %>/student/studentProfile.jsp" method="get">
     <button type="submit" class="action-btn">Profil</button>
   </form>
 
-  <form action="studentSchedule.jsp" method="get">
+  <form action="<%= request.getContextPath() %>/student/studentSchedule.jsp" method="get">
     <button type="submit" class="action-btn">Emploi du Temps</button>
   </form>
 
-  <form action="studentGrades.jsp" method="get">
+  <form action="<%= request.getContextPath() %>/student/studentGrades.jsp" method="get">
     <button type="submit" class="action-btn">Relevé de Notes</button>
   </form>
 
-  <form action="studentPerformance.jsp" method="get">
+  <form action="<%= request.getContextPath() %>/student/studentPerformance.jsp" method="get">
     <button type="submit" class="action-btn">Performances</button>
   </form>
 </div>

@@ -16,8 +16,8 @@
   <body>
     <div id="container">
         <div id="content">
-            <p>Admin login</p>
-            <form action="${pageContext.request.contextPath}/AdminLoginServlet">
+            <p>Student login</p>
+            <form action="${pageContext.request.contextPath}/StudentLoginServlet">
                 <p>Email: <input type="text" id="mail" name="mail" required></p>
                 <p>Password: <input type="password" id="password" name="password" required></p>
                 <p><input type="submit" value="Login" id="button"></p>

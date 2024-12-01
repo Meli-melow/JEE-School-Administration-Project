@@ -15,7 +15,7 @@
     <div id="container">
         <div id="content">
             <p>New Teacher form</p>
-            <form>
+            <form action="${pageContext.request.contextPath}/CreateTeacherServlet">
                 <p>Firstname: <input type="text" id="firstname" name="firstname" required></p>
                 <p>Lastname: <input type="text" id="lastname" name="lastname" required></p>
                 <p>Field: <input type="text" id="field" name="field" required></p>

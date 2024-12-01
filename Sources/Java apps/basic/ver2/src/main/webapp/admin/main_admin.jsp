@@ -9,22 +9,24 @@
 <html>
 <head>
     <title>Main page</title>
-  <link rel="stylesheet" type="text/css" href="../main_page.css">
+  <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/professor/style.css">
 </head>
 <body>
-  <div id="container">
-    <div id="content">
-      <div class="center-button">
-        <p><a href="table/schedule.jsp">List of courses</a></p>
-      </div>
-      <div class="center-button">
-        <p><a href="table/student_table.jsp">List of students</a></p>
-      </div>
-      <div class="center-button">
-        <p><a href="table/teacher_table.jsp">List of teachers</a></p>
-      </div>
-      <p><a href="real_index.jsp">Change profile</a></p>
-    </div>
+  <div class="container">
+      <h1>Main page - Admin</h1>
+      <p>Welcome! Choose an action</p>
+      <form action="<%= request.getContextPath() %>/admin/table/schedule.jsp">
+        <button type="submit">List of courses</button>
+      </form>
+      <form action="<%= request.getContextPath() %>/admin/table/student_table.jsp">
+        <button type="submit">List of students</button>
+      </form>
+      <form action="<%= request.getContextPath() %>/admin/table/teacher_table.jsp">
+        <button type="submit">List of teachers</button>
+      </form>
+      <form action="<%= request.getContextPath()%>/admin/admin_profile.jsp">
+        <button type="submit">Change profile</button>
+      </form>
   </div>
 </body>
 </html>

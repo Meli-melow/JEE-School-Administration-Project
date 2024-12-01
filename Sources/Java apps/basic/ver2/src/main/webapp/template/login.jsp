@@ -17,9 +17,11 @@
     <div id="container">
         <div id="content">
             <p>Student login</p>
-            <p>Username: <input type="text" id="username" name="username" required></p>
-            <p>Password: <input type="password" id="password" name="password" required></p>
-            <p><input type="submit" value="Login" id="button"></p>
+            <form>
+                <p>Email: <input type="text" id="mail" name="mail" required></p>
+                <p>Password: <input type="password" id="password" name="password" required></p>
+                <p><input type="submit" value="Login" id="button"></p>
+            </form>
         </div>
     </div>
   </body>
