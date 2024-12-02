@@ -1,0 +1,37 @@
+*** Teacher samples ***
+#T1 : new Teacher("Alain", "LECLAIR", "alain.leclair@cyu.fr", "alLE", "Modèles Probabilistes")
+#T2 : new Teacher("Paul", "MARRE", "paul.marre@cyu.fr", "dgjhgd", "Informatique")
+#T3 : new Teacher("Éric", "LECHAMP", "eric.lechamp@cyu.fr", "gfcgctr", "Data Exploration")
+#T4 : new Teacher("Valérie", "PICHON", "valerie.pichon@cyu.fr", "rfkjbj", "Cloud Infrastructure")
+#T5 : new Teacher("Albert", "GRANDET", "albert.grandet@cyu.fr", "sqkbnhb", "Modèles Probabilistes")
+
+*** Course samples ***
+#C1 : new Course(java.sql.Date.valueOf("2024-11-25"),
+"13h00", "3h15", "Maths", "ING1 GI GR3", "alain.leclair@cyu.fr")
+#C2 : new Course(java.sql.Date.valueOf("2024-11-22"), "10h15",
+"3h15", "Informatique", "ING1 GI GR2", "paul.marre@cyu.fr")
+#C3 : new Course(java.sql.Date.valueOf("2024-12-02"), "13h", "3h15", "Cloud 1",
+"ING 3 Cloud Computing", "valerie.pichon@cyu.fr")
+#C4 : new Course(java.sql.Date.valueOf("2024-11-07"),
+"10h15", "1h30", "Maths", "ING1 GI GR2", "albert.grandet@cyu.fr")
+#C5 : new Course(java.sql.Date.valueOf("2024-11-12"),
+"13h00", "3h00", "Maths", "ING1 GI GR2", "eric.lechamp@cyu.fr")
+
+*** Student samples ***
+#S1 : new Student("Hélène",  "LÉGER", "helene.leger@cyu.fr", "djbc",
+java.sql.Date.valueOf("2004-05-25"), "ING1 GI GR3")
+#S2 : new Student("Clara", "LAGARRE", "clara.lagarre@cyu.fr", "fld^ld",
+java.sql.Date.valueOf("2001-11-28"), "ING 3 Cloud Computing")
+#S3 : new Student("Laurent", "FLALLET", "laurent.flarret@cyu.fr", "fld^ld",
+java.sql.Date.valueOf("2004-05-01"), "ING GI GR2")
+#S4 : new Student("Flaure",  "PALLON", "flaure.pallon@cyu.fr", "ajdhno",
+java.sql.Date.valueOf("2004-05-25"), "ING1 GI GR3")
+#S5 : new Student("Julie",  "ABATTE", "julie.abatte@cyu.fr", "uglug",
+java.sql.Date.valueOf("2005-02-28"), "ING1 GI GR3")
+
+*** Admin samples ***
+#A1 : new Admin("Jules", "PELLEKES", "jules.pellekes@cyu.fr", "alLE")
+#A2 : new Admin("Henri", "SHAGWAN", "henri.shagwan@cyu.fr", "dgjhgd")
+#A3 : new Admin("Marie", "GAUGET", "marie.gauget@cyu.fr", "gfcgctr")
+#A4 : new Admin("Victor", "BONNET", "victor.bonnet@cyu.fr", "rfkjbj")
+#A5 : new Admin("Jacques", "LISSERR", "jacques.lisserr@cyu.fr", "sqkbnhb")
