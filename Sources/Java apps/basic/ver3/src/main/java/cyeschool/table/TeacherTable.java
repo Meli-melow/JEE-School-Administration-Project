@@ -1,15 +1,14 @@
 package cyeschool.table;
 
 import entities.Teacher;
+import services.AdminService;
 
 import java.util.List;
 
 public class TeacherTable {
-    private List<Teacher> teacherList;
-    public TeacherTable(List<Teacher> teacherList) {
-        this.teacherList = teacherList;
-    }
-    public String generateTable(){
+    public static String generateTable(){
+        AdminService adminService = new AdminService();
+        List<Teacher> teacherList=adminService.getAllTeachers();
         StringBuilder table = new StringBuilder();
         for (Teacher teacher : teacherList) {
             table.append("<tr><td>");

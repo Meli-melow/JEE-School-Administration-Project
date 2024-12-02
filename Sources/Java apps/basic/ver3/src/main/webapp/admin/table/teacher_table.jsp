@@ -28,13 +28,7 @@
             </tr>
             </thead>
             <tbody>
-                <%! List<Teacher> l= new ArrayList<Teacher>();%>
-                <% for(int i=0;i<20;i++){
-                    Teacher t= new Teacher("Chika","Takami","mail@mail.com","mikan","Physics");
-                    l.add(t);
-                }%>
-                <%! TeacherTable table = new TeacherTable(l);%>
-                <%= table.generateTable()%>
+                <%= TeacherTable.generateTable()%>
             </tbody>
         </table>
     </div>

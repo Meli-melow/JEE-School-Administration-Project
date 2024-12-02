@@ -31,13 +31,7 @@
             </tr>
             </thead>
             <tbody>
-                <%! List<Student> l= new ArrayList<Student>();%>
-                <% for(int i=0;i<20;i++){
-                    Student s= new Student("Chika","Takami","mail@mail.com","mikan",new java.sql.Date(103,8,1),"ING2");
-                    l.add(s);
-                }%>
-                <%! StudentTable table = new StudentTable(l);%>
-                <%= table.generateTable()%>
+                <%= StudentTable.generateTable()%>
             </tbody>
         </table>
     </div>

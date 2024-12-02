@@ -2,7 +2,8 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="entities.Course" %>
-<%@ page import="entities.Teacher" %><%--
+<%@ page import="entities.Teacher" %>
+<%@ page import="services.TeacherService" %><%--
   Created by IntelliJ IDEA.
   User: frime
   Date: 27/11/2024
@@ -24,19 +25,12 @@
                 <th>Timeslot</th>
                 <th>Duration</th>
                 <th>Field</th>
-                <th>Course Unit</th>
                 <th>School Year</th>
                 <th>Teacher</th>
             </tr>
             </thead>
             <tbody>
-                <%! List<Course> l= new ArrayList<Course>();%>
-                <% for(int i=0;i<20;i++){
-                    Course c=new Course("Computer",new java.sql.Date(124,11,29),"12h00","3h", "ING3",new Teacher("","PK","","",""));
-                    l.add(c);
-                }%>
-                <%! ScheduleGenerator schedule = new ScheduleGenerator(l);%>
-                <%= schedule.generateSchedule()%>
+                <%= ScheduleGenerator.generateSchedule()%>
             </tbody>
         </table>
     </div>
