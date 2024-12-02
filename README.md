@@ -1,16 +1,16 @@
 # JEE-School-Administration-Project
  A school administration web app made with Java Entreprise Edition
 
-This project has 3 differents parts :
+This project has 3 differents parts :<br>
 -The Student space<br>
 -The Teacher space<br>
 -The Admin space<br>
-<br><br>
+<br>
 For usage :<br>
 • focused on the database, please refer to the latest ver3 repertory ;<br>
 • focused on the front end, please refer to the latest commit regarding the addition of a webapp repertory.<br>
 They don't belong to the same folder project.
-<br><br>
+<br>
 You need to login to access these spaces. The servlets check if the email and the password are in the right format and correspond to the database.
 You need to insert into the database at least an Admin with an email in the "firstname.lastname@cyu.fr" format and a password that has at least 8 characters.
 <br>
@@ -26,7 +26,7 @@ The Admin space can :<br>
 -Add an Admin in the database<br>
 -Add a Course in the database<br>
 
-<br><br><br>
+<br>
 There are functionnalities from the backend that are not implemented in the frontend :
 -The ability to change the information of any user's profile in the database<br>
 -The ability for an user to change their password in the database<br>
