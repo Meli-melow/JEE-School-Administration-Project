@@ -6,6 +6,11 @@ This project has 3 differents parts :
 -The Teacher space
 -The Admin space
 
+For usage :
+• focused on the database, please refer to the latest ver3 repertory ;
+• focused on the front end, please refer to the latest commit regarding the addition of a webapp repertory.
+They don't belong to the same folder project.
+
 You need to login to access these spaces. The servlets check if the email and the password are in the right format and correspond to the database.
 You need to insert into the database at least an Admin with an email in the "firstname.lastname@cyu.fr" format and a password that has at least 8 characters.
 
