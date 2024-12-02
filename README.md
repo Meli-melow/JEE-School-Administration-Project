@@ -6,8 +6,8 @@ This project has 3 differents parts :
 -The Teacher space
 -The Admin space
 
-For usage :
-• focused on the database, please refer to the latest ver3 repertory ;
+For usage :<br>
+• focused on the database, please refer to the latest ver3 repertory ;<br>
 • focused on the front end, please refer to the latest commit regarding the addition of a webapp repertory.
 They don't belong to the same folder project.
 
