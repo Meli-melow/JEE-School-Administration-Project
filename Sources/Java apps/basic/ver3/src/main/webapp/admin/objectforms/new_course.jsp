@@ -1,4 +1,9 @@
-<%--
+<%@ page import="classes.Hour" %>
+<%@ page import="classes.Duration" %>
+<%@ page import="classes.SchoolYear" %>
+<%@ page import="entities.Teacher" %>
+<%@ page import="services.AdminService" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: frime
   Date: 27/11/2024
@@ -8,37 +13,50 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../../template/form.css">
+    <title>Create Course</title>
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/template/form.css">
 </head>
 <body>
     <div id="container">
-        <div id="content">
-            <p>New course</p>
-            <form>
-                <p>Field: <input type="text" id="field" name="field" required></p>
-                <p>Timeslot: <input type="datetime-local" id="slot" name="slot"></p>
-                <p>
-                    Duration: <select name="duration" required>
-                        <option value="1:30">1h30</option>
-                        <option value="3:00">3h00</option>
+            <h1>New course</h1>
+            <form action="${pageContext.request.contextPath}/CreateCourseServlet">
+                <p>Date: <input type="date" id="slot" name="slot" required></p>
+                <p>Start of the course:<select name="hour" required>
+                        <%-- On prend tous les valeurs possible de l'énum Hour pour laisser seulement le choix des valeurs acceptées pour la création d'un cours--%>
+                        <%! Hour[] hours = Hour.values();%>
+                        <%for(Hour h : hours){
+                            out.print("<option value='"+h.getHourValue()+"'>"+h.getHourValue()+"</option>");
+                        }%>
                     </select>
                 </p>
                 <p>
-                    Unit: <select name="unitName" required>
-                        <option value="maths">Maths</option>
-                        <option value="computer_science">Computer Science</option>
+                    Duration: <select name="duration" required>
+                        <%! Duration[] durations = Duration.values();%>
+                        <%for(Duration d : durations){
+                            out.print("<option value='"+d.getDurationValue()+"'>"+d.getDurationValue()+"</option>");
+                        }%>
                     </select>
                 </p>
                 <p>
                     School Year: <select name="school_year" required>
-                        <option value="ING1">ING1</option>
-                        <option value="ING2">ING2</option>
+                        <%! SchoolYear[] years = SchoolYear.values();%>
+                        <%for(SchoolYear y : years){
+                            out.print("<option value='"+y.getSchoolYearValue()+"'>"+y.getSchoolYearValue()+"</option>");
+                        }%>
                     </select>
+                </p>
+                <p>Teacher:<select name="teacher" required>
+                    <% AdminService service = new AdminService();
+                        List<Teacher> teachers = service.getAllTeachers();
+                        for(Teacher t : teachers) {
+                            out.print("<option value='"+t.getMail()+"'>"+t.getLastname()+"</option>");
+                        }%>
                 </p>
                 <p><input type="submit" value="Create new course" id="button"></p>
             </form>
+            <form action="<%= request.getContextPath() %>/admin/table/schedule.jsp" method="get">
+                <button type="submit" class="return">Exit</button>
+            </form>
         </div>
-    </div>
 </body>
 </html>

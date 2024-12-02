@@ -7,7 +7,7 @@ public class TeacherService {
 
     public TeacherService() {}
 
-    //TODO : indication to servlet if creation succeeded (servlet will dispatch user data on jsp where needed)
+
     public String createTeacher(Teacher newTeacher) {
         return new TeacherDao().daoAddTeacher(newTeacher);
     }

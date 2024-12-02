@@ -1,15 +1,15 @@
 package cyeschool.table;
 
 import entities.Student;
+import services.AdminService;
 
 import java.util.List;
 
 public class StudentTable {
-    private List<Student> studentList;
-    public StudentTable(List<Student> studentList) {
-        this.studentList = studentList;
-    }
-    public String generateTable(){
+
+    public static String generateTable(){
+        AdminService adminService = new AdminService();
+        List<Student> studentList= adminService.getAllStudents(); //Appelle le service pour obtenir tous les comptes étudiants présents dans la base de données
         StringBuilder table = new StringBuilder();
         for (Student student : studentList) {
             table.append("<tr><td>");

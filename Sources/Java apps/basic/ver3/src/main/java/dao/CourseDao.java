@@ -34,7 +34,7 @@ public class CourseDao {
                     query.setParameter("school_year", courseSchoolYear);
                     try {
                         List<Student> classStudents = query.getResultList();
-                        //TODO : Handle case where no student was created
+
                         course.setStudents(classStudents);
                         for (Student classStudent : course.getStudents()) {
                             em.merge(classStudent);
@@ -45,6 +45,8 @@ public class CourseDao {
                         }
                     } catch (NoResultException nrex) {
                         // There are no students in the given school year
+                        em.persist(course);
+                        em.flush();
                         return serviceMessage;
                     }
                     em.persist(course);
@@ -75,7 +77,7 @@ public class CourseDao {
         return course;
     }
 
-    //TODO : if no new slot, replace it with java.sql.Date.valueOf("1900-01-01") to avoid IllegalArgumentException
+
     public String daoPatchCourse(int courseId, Date newCourseDay, String newCourseHour,
     String newCourseDuration, String newCourseSchoolYear, String newTeacherMail) {
 
@@ -103,8 +105,7 @@ public class CourseDao {
 
                 serviceMessage += "Updated course teacher.";
             }
-            //TODO : if no new slot, replace it with java.sql.Date.valueOf("1900-01-01") to avoid IllegalArgumentException
-            //TODO : java.sql.Date.valueOf("1900-01-01") means keeping the current slot
+
             if (!newCourseDay.equals(java.sql.Date.valueOf("1900-01-01")) && newCourseDay != course.getDay())
                 course.setDay(newCourseDay);
 
@@ -184,7 +185,6 @@ public class CourseDao {
         return "Course deleted successfully !\n";
     }
 
-    //TODO : now for admin actions
 
     public List<Course> daoGetAllCourses() {
 
@@ -207,23 +207,20 @@ public class CourseDao {
         return coursesList;
     }
 
-    //TODO : Limited because day is assumed to be the first parameter
-    // Filtering with school years and fields might give no results because some fields belong
-    // to specific school years
+
     public List<Course> daoGetAllCourses(Date day, String hour, String schoolYear, String field, String duration)
     {
         List<Course> coursesList;
         try {
             EntityManager em = EntityManagerUtil.getEntityManager();
             em.getTransaction().begin();
-            String hql = "SELECT c FROM Course c";
-            // Filtering courses by field
-            if (day != null && !day.equals(""))
-                hql += " WHERE c.day = :day";
+            // the school year is assumed to be used for filtering
+            String hql = "SELECT c FROM Course c WHERE c.schoolYear = :school_year";
+            // Filtering courses by field criteria
             if (hour != null && !hour.equals(""))
                 hql += " AND c.hour = :hour";
-            if (schoolYear != null && !schoolYear.equals(""))
-                hql += " AND c.schoolYear = :school_year";
+            if (day != null && !day.equals(""))
+                hql += " AND c.day = :day";
             if (field != null && !field.equals(""))
                 hql += " AND c.field = :field";
             if (duration != null && !duration.equals(""))
@@ -232,7 +229,6 @@ public class CourseDao {
             TypedQuery<Course> query = em.createQuery(hql, Course.class);
             query.setParameter("day", day);
             query.setParameter("hour", hour);
-            query.setParameter("school_year", schoolYear);
             query.setParameter("field", field);
             query.setParameter("duration", duration);
             try {

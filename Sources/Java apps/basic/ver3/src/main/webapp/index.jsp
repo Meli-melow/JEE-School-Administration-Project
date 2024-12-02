@@ -2,21 +2,23 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="main_page.css">
+    <link rel="stylesheet" type="text/css" href="professor/style.css">
 </head>
 <body>
-<div id="container">
-    <div id="content">
-        <div class="center-button">
-            <p><a href="login/student_login.jsp">Student Login</a></p>
-        </div>
-        <div class="center-button">
-            <p><a href="admin/main_admin.jsp">Teacher Login</a></p>
-        </div>
-        <div class="center-button">
-            <p><a href="login/admin_login.jsp">Admin Login</a></p>
-        </div>
-    </div>
+<div class="container">
+
+        <h1>Login</h1>
+        <p>Please select what type of user you are:</p>
+        <form action="login/student_login.jsp">
+            <button type="submit">Student</button>
+        </form>
+        <form action="login/teacher_login.jsp">
+            <button type="submit">Teacher</button>
+        </form>
+        <form action="login/admin_login.jsp">
+            <button type="submit">Admin</button>
+        </form>
+
 </div>
 </body>
 </html>

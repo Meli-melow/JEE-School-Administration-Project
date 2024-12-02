@@ -11,7 +11,7 @@ public class CourseService {
 
     public CourseService() {}
 
-    //TODO : indication to servlet if field does not match the teacher's one
+
     public String createCourse(Date courseDay, String courseHour, String courseDuration, String courseSchoolYear,
     String teacherMail) {
         // Check if hour, duration and schoolYear entries are valid
@@ -31,7 +31,7 @@ public class CourseService {
         return new CourseDao().daoFetchCourseById(courseId);
     }
 
-    //TODO: Patch version
+
     public String patchCourse(int courseId, Date newCourseDay, String newCourseHour,
                             String newCourseDuration, String newCourseSchoolYear, String newTeacherMail) {
         // Check if hour, duration and schoolYear entries are valid
@@ -57,7 +57,7 @@ public class CourseService {
     /*public void patchCourse(int courseId, String newCourseField, Date newCourseDay, String newCourseHour,
     String newCourseDuration, String newCourseSchoolYear, String newCourseUnit, String newTeacherMail) {}*/
 
-    //TODO : CASCADING
+
     public String deleteCourse(int courseId) {
         return new CourseDao().daoDeleteCourseById(courseId);
     }

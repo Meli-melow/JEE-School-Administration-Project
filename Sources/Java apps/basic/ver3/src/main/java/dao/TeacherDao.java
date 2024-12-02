@@ -158,12 +158,7 @@ public class TeacherDao {
         return "Teacher deleted successfully !\n";
     }
 
-    //TODO
-    // Select proms
-    // Set grades to a prom
-    // ENCRYPT PSWDS
 
-    //TODO : now for admin actions
 
     public List<Teacher> daoGetAllTeachers() {
 

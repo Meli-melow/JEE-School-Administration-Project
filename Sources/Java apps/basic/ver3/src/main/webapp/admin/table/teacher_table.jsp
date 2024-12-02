@@ -11,11 +11,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>List of Teachers</title>
     <link rel="stylesheet" href="../../template/table.css">
 </head>
 <body>
-<div id="container">
+<div class="container">
+    <h1>List of Teachers</h1>
     <div class="cadre-table-scroll">
         <table class="table-scroll">
             <thead>
@@ -28,20 +29,16 @@
             </tr>
             </thead>
             <tbody>
-                <%! List<Teacher> l= new ArrayList<Teacher>();%>
-                <% for(int i=0;i<20;i++){
-                    Teacher t= new Teacher("Chika","Takami","mail@mail.com","mikan","Physics");
-                    l.add(t);
-                }%>
-                <%! TeacherTable table = new TeacherTable(l);%>
-                <%= table.generateTable()%>
+                <%= TeacherTable.generateTable()%>
             </tbody>
         </table>
     </div>
-    <p><div class="left-button"></div>
-    <div class="right-button"><a href="../objectforms/new_teacher.jsp">Add teacher</a></div>
-    </p>
-    <p><div class="right-button"><a href="../main_admin.jsp">Exit</a></div></p>
+    <form action="../objectforms/new_teacher.jsp" method="get">
+        <button type="submit">Add Teacher</button>
+    </form>
+    <form action="../main_admin.jsp" method="get">
+        <button type="submit" class="return">Exit</button>
+    </form>
 </div>
 </body>
 </html>
