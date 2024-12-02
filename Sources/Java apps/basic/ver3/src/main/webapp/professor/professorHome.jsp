@@ -4,33 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil Professeur</title>
+    <title>Main page</title>
 
     <link rel="stylesheet" href="<%= request.getContextPath() %>/professor/style.css">
 </head>
 <body>
 <div class="container">
     <h1>Page d'accueil - Professeur</h1>
-    <p>Bienvenue sur votre espace ! Choisissez une option :</p>
+    <p>Welcome to your space ! Choose an option :</p>
 
 
     <form action="<%= request.getContextPath() %>/professor/profile.jsp" method="get">
-        <button type="submit">Profil</button>
+        <button type="submit">Profile</button>
     </form>
 
 
     <form action="<%= request.getContextPath() %>/professor/professorSchedule.jsp" method="get">
-        <button type="submit">Emploi du Temps</button>
+        <button type="submit">Timetable</button>
     </form>
 
     <!-- Bouton vers la page Saisir les Notes -->
     <form action="<%= request.getContextPath() %>/professor/addNotes.jsp" method="get">
-        <button type="submit">Saisir les Notes</button>
+        <button type="submit">Add a Grade</button>
     </form>
 
     <!-- Bouton vers la page Regarder/Modifier les Notes -->
     <form action="<%= request.getContextPath() %>/professor/viewNotes.jsp" method="get">
-        <button type="submit">Regarder/Modifier les Notes</button>
+        <button type="submit">Show/Change Grades</button>
     </form>
 </div>
 </body>

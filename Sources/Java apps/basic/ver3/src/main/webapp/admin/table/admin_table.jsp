@@ -1,9 +1,8 @@
-<%@ page import="cyeschool.table.ScheduleGenerator" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="entities.Course" %>
 <%@ page import="entities.Teacher" %>
-<%@ page import="services.TeacherService" %><%--
+<%@ page import="cyeschool.table.TeacherTable" %>
+<%@ page import="cyeschool.table.AdminTable" %><%--
   Created by IntelliJ IDEA.
   User: frime
   Date: 27/11/2024
@@ -13,35 +12,34 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>List of Courses</title>
+    <title>List of Admins</title>
     <link rel="stylesheet" href="../../template/table.css">
 </head>
 <body>
 <div class="container">
-    <h1>List of Courses</h1>
+    <h1>List of Admins</h1>
     <div class="cadre-table-scroll">
         <table class="table-scroll">
             <thead>
             <tr>
-                <th>Timeslot</th>
-                <th>Duration</th>
-                <th>Field</th>
-                <th>School Year</th>
-                <th>Teacher</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Mail</th>
+                <th>Profile</th>
             </tr>
             </thead>
             <tbody>
-                <%= ScheduleGenerator.generateSchedule()%>
+                <%= AdminTable.generateTable()%>
             </tbody>
         </table>
     </div>
-
-    <form action="../objectforms/new_course.jsp" method="get">
-        <button type="submit">Add Course</button>
+    <form action="../objectforms/new_admin.jsp" method="get">
+        <button type="submit">Add Admin</button>
     </form>
     <form action="../main_admin.jsp" method="get">
         <button type="submit" class="return">Exit</button>
     </form>
+
 </div>
 </body>
 </html>

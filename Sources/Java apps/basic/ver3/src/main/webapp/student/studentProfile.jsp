@@ -3,6 +3,7 @@
 <%@ page import="java.util.List"%>
 <%@ page import="java.sql.Date"%>
 <%@ page import="entities.Student"%>
+<%@ page import="services.StudentService" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +14,10 @@
 </head>
 <body>
 <div class="container">
-  <h1>Profil Étudiant</h1>
-  <%=request.getParameter("email")%>
+  <h1>Profile</h1>
   <!-- Bouton pour retourner à l'accueil -->
   <form action="studentHome.jsp" method="post">
-    <button type="submit" class="return-btn">Retourner à l'accueil</button>
+    <button type="submit" class="return-btn">Main page</button>
   </form>
 
   <%
@@ -29,14 +29,16 @@
 
     // Exemple : Sélectionner le premier étudiant (simule une connexion utilisateur)
     Student currentStudent = students.get(0); // Vous pouvez changer l'indice pour tester un autre étudiant
+//    StudentService service = new StudentService();
+//    Student currentStudent = service.getStudentByMail();
   %>
 
   <!-- Affichage des informations de l'étudiant -->
   <div class="profile">
-    <p><strong>Nom :</strong> <%= currentStudent.getLastname() %></p>
-    <p><strong>Prénom :</strong> <%= currentStudent.getFirstname() %></p>
+    <p><strong>Lastname :</strong> <%= currentStudent.getLastname() %></p>
+    <p><strong>Firstname :</strong> <%= currentStudent.getFirstname() %></p>
     <p><strong>Email :</strong> <%= currentStudent.getMail() %></p>
-    <p><strong>Date de Naissance :</strong> <%= currentStudent.getBirth() %></p>
+    <p><strong>Birthday :</strong> <%= currentStudent.getBirth() %></p>
     <p><strong>Promotion :</strong> <%= currentStudent.getSchoolYear() %></p>
   </div>
 </div>

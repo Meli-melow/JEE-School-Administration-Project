@@ -9,21 +9,21 @@
 <html>
 <head>
     <title>Create Teacher</title>
-    <link rel="stylesheet" type="text/css" href="../../template/form.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/template/form.css">
 </head>
 <body>
     <div id="container">
-        <div id="content">
-            <p>New Teacher form</p>
+            <h1>New Teacher form</h1>
             <form action="${pageContext.request.contextPath}/CreateTeacherServlet">
                 <p>Firstname: <input type="text" id="firstname" name="firstname" required></p>
                 <p>Lastname: <input type="text" id="lastname" name="lastname" required></p>
                 <p>Field: <input type="text" id="field" name="field" required></p>
-                <p>Mail: <input type="text" id="mail" name="mail" required></p>
                 <p>Password: <input type="password" id="password" name="password" required></p>
                 <p><input type="submit" value="Create new user" id="button"></p>
             </form>
+            <form action="<%= request.getContextPath() %>/admin/table/teacher_table.jsp" method="get">
+                <button type="submit" class="return">Exit</button>
+            </form>
         </div>
-    </div>
 </body>
 </html>

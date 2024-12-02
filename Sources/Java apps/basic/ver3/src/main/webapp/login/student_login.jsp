@@ -15,14 +15,15 @@
 
   <body>
     <div id="container">
-        <div id="content">
-            <p>Student login</p>
+            <h1>Student login</h1>
             <form action="${pageContext.request.contextPath}/StudentLoginServlet">
                 <p>Email: <input type="text" id="mail" name="mail" required></p>
                 <p>Password: <input type="password" id="password" name="password" required></p>
                 <p><input type="submit" value="Login" id="button"></p>
             </form>
-        </div>
+            <form action="../index.jsp" method="get">
+                <button type="submit" class="return">Exit</button>
+            </form>
     </div>
   </body>
 </html>

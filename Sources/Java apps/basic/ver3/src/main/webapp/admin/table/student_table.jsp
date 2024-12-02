@@ -13,11 +13,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>List of Students</title>
     <link rel="stylesheet" href="../../template/table.css">
 </head>
 <body>
-<div id="container">
+<div class="container">
+    <h1>List of Students</h1>
     <div class="cadre-table-scroll">
         <table class="table-scroll">
             <thead>
@@ -35,10 +36,12 @@
             </tbody>
         </table>
     </div>
-    <p><div class="left-button"></div>
-    <div class="right-button"><a href="../objectforms/new_student.jsp">Add student</a></div>
-    </p>
-    <p><div class="right-button"><a href="../main_admin.jsp">Exit</a></div></p>
+    <form action="../objectforms/new_student.jsp" method="get">
+        <button type="submit">Add Student</button>
+    </form>
+    <form action="../main_admin.jsp" method="get">
+        <button type="submit" class="return">Exit</button>
+    </form>
 </div>
 </body>
 </html>

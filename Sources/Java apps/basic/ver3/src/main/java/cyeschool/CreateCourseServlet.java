@@ -19,31 +19,21 @@ public class CreateCourseServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
+        //Récupération des paramètres
         String slot = request.getParameter("slot");
         String hour = request.getParameter("hour");
         String duration = request.getParameter("duration");
         String school_year = request.getParameter("school_year");
+        String teacher_mail = request.getParameter("teacher");
 
         Date date = Date.valueOf(slot);
 
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>Creating Course...</h1>");
-        if(true){
-            TeacherService ts = new TeacherService();
-            CourseService service = new CourseService();
-            String msg=service.createCourse(date,hour,duration,school_year,"aa@aa");
-            out.println("<h1>"+msg+"</h1>");
-        }
-        else{
-            out.println("Couldn't create course");
-            out.println("</body></html>");
-            try {
-                request.getRequestDispatcher("/admin/objectforms/new_course.jsp").forward(request, response);
-            }
-            catch (ServletException e) {}
-
-        }
+        CourseService service = new CourseService();
+        String msg=service.createCourse(date,hour,duration,school_year,teacher_mail); //On utilise le service pour créer le cours dans la base de données avec les paramètres données par l'admin
+        out.println("<h1>"+msg+"</h1>"); //affichage du message de succès ou d'erreur de l'opération
         out.println("</body></html>");
     }
 

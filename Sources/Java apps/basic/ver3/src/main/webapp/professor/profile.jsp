@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="java.util.List"%>
 <%@ page import="entities.Teacher"%>
+<%@ page import="services.TeacherService" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +20,8 @@
     List<Teacher> teachers = new ArrayList<>();
     teachers.add(new Teacher("test", "test", "test@example.com", "password123", "Mathématiques"));
     Teacher currentTeacher = teachers.get(0); // Supposons que ce soit le professeur actuel
+//    TeacherService service = new TeacherService();
+//    Teacher currentTeacher = service.getTeacherByMail();
   %>
 
   <!-- Informations du profil -->

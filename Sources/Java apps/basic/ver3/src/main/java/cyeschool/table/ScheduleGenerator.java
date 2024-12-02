@@ -10,7 +10,7 @@ public class ScheduleGenerator {
 
     public static String generateSchedule(){
         AdminService adminService = new AdminService();
-        List<Course> courseList=adminService.getAllCourses();
+        List<Course> courseList=adminService.getAllCourses();//Appelle le service pour obtenir tous les cours présents dans la base de données
         StringBuilder schedule = new StringBuilder();
         for(Course course : courseList){
             schedule.append("<tr><td>");

@@ -18,9 +18,6 @@
         <form action="login/admin_login.jsp">
             <button type="submit">Admin</button>
         </form>
-        <form action="admin/main_admin.jsp">
-            <button type="submit">Admin pages</button>
-        </form>
 
 </div>
 </body>

@@ -6,12 +6,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajouter des Notes</title>
+  <title>Add Grades</title>
   <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 <div class="container">
-  <h1>Ajouter des Notes</h1>
+  <h1>Add Grades</h1>
 
   <!-- Définition des étudiants -->
   <%
@@ -31,9 +31,9 @@
 
   <!-- Formulaire pour sélectionner une promotion -->
   <form method="get" action="addNotes.jsp">
-    <label for="promo">Choisir une promotion :</label>
+    <label for="promo">Choose a promotion :</label>
     <select name="promo" id="promo" onchange="this.form.submit()">
-      <option value="">-- Sélectionnez une promotion --</option>
+      <option value="">-- Choose a promotion --</option>
       <option value="ING1" <%= "ING1".equals(request.getParameter("promo")) ? "selected" : "" %>>ING1</option>
       <option value="ING2" <%= "ING2".equals(request.getParameter("promo")) ? "selected" : "" %>>ING2</option>
       <option value="ING3" <%= "ING3".equals(request.getParameter("promo")) ? "selected" : "" %>>ING3</option>
@@ -52,9 +52,9 @@
     <table>
       <thead>
       <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Note</th>
+        <th>Name</th>
+        <th>Firstname</th>
+        <th>Grade</th>
       </tr>
       </thead>
       <tbody>
@@ -71,13 +71,13 @@
       </tbody>
     </table>
     <% if (!found) { %>
-    <p>Aucun étudiant trouvé pour cette promotion.</p>
+    <p>No student in this promotion.</p>
     <% } else { %>
-    <button type="submit">Enregistrer les Notes</button>
+    <button type="submit">Save Grades</button>
     <% } %>
   </form>
   <% } else { %>
-  <p>Veuillez sélectionner une promotion.</p>
+  <p>Select a promotion.</p>
   <% } %>
 
   <!-- Stocker les notes soumises dans la session -->
@@ -94,7 +94,7 @@
 
   <!-- Bouton pour retourner à l'accueil -->
   <form action="professorHome.jsp" method="get">
-    <button type="submit" class="return">Retourner à l'accueil</button>
+    <button type="submit" class="return">Main page</button>
   </form>
 </div>
 </body>

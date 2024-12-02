@@ -24,11 +24,11 @@
       <form action="<%= request.getContextPath() %>/admin/table/teacher_table.jsp">
         <button type="submit">List of teachers</button>
       </form>
-      <form action="<%= request.getContextPath() %>/admin/objectforms/new_admin.jsp">
-          <button type="submit">Create a new admin</button>
+      <form action="<%= request.getContextPath() %>/admin/table/admin_table.jsp">
+          <button type="submit">List of admins</button>
       </form>
       <form action="<%= request.getContextPath()%>/admin/admin_profile.jsp">
-        <button type="submit">Change profile</button>
+        <button type="submit">Profile</button>
       </form>
   </div>
 </body>

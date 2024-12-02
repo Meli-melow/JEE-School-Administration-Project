@@ -36,6 +36,8 @@ public class StudentDao {
                 }
             } catch (NoResultException nrex) {
                 // There are no courses having the corresponding school year
+                em.persist(student);
+                em.flush();
                 return "Student created successfully !\n";
             }
             em.persist(student);
@@ -43,7 +45,6 @@ public class StudentDao {
             em.getTransaction().commit();
 
         } catch (Throwable ex) {
-            //TODO : catch for fields validation (ConstraintViolationException)
             throw new ExceptionInInitializerError("EntityManagerFactory initialisation failed : " + ex);
         }
         return "Student creation and sign up to existing courses successfull !\n";
@@ -109,7 +110,7 @@ public class StudentDao {
         return student;
     }
 
-    //TODO : if no new birthdate, replace it with java.sql.Date.valueOf("1900-01-01") to avoid IllegalArgumentException
+
     public String daoPatchStudentProfile(int studentId, String newFirstname, String newLastname, String newMail, Date newBirth,
     String newProm) {
 
@@ -211,11 +212,7 @@ public class StudentDao {
         return "Student deleted successfully !\n";
     }
 
-    //TODO
-    // Get results and assignements
-    //  ENCRYPT PSWDS
 
-    //TODO : now for admin actions
 
     public List<Student> daoGetAllStudents() {
 

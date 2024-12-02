@@ -6,12 +6,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voir et Modifier les Notes</title>
+  <title>Show/Change Grades</title>
   <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 <div class="container">
-  <h1>Voir et Modifier les Notes</h1>
+  <h1>Show/Change Grades</h1>
 
   <!-- Récupérer les notes stockées dans la session -->
   <%
@@ -24,9 +24,9 @@
 
   <!-- Formulaire pour sélectionner une promotion -->
   <form method="get" action="viewNotes.jsp">
-    <label for="promo">Choisir une promotion :</label>
+    <label for="promo">Choose a promotion :</label>
     <select name="promo" id="promo" onchange="this.form.submit()">
-      <option value="">-- Sélectionnez une promotion --</option>
+      <option value="">-- Choose a promotion --</option>
       <option value="ING1" <%= "ING1".equals(request.getParameter("promo")) ? "selected" : "" %>>ING1</option>
       <option value="ING2" <%= "ING2".equals(request.getParameter("promo")) ? "selected" : "" %>>ING2</option>
       <option value="ING3" <%= "ING3".equals(request.getParameter("promo")) ? "selected" : "" %>>ING3</option>
@@ -44,10 +44,10 @@
     <table>
       <thead>
       <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Note</th>
-        <th>Supprimer</th>
+        <th>Name</th>
+        <th>Firstname</th>
+        <th>Grade</th>
+        <th>Delete</th>
       </tr>
       </thead>
       <tbody>
@@ -62,19 +62,19 @@
           <input type="number" name="note_<%= i %>" value="<%= note[3] %>" step="0.01" min="0" max="20">
         </td>
         <td>
-          <button type="submit" name="delete_<%= i %>">Supprimer</button>
+          <button type="submit" name="delete_<%= i %>">Delete</button>
         </td>
       </tr>
       <% } } %>
       </tbody>
     </table>
-    <button type="submit">Enregistrer les modifications</button>
+    <button type="submit">Save changes</button>
   </form>
   <% if (notes.stream().noneMatch(note -> note[0].equals(selectedPromo))) { %>
-  <p>Aucune note trouvée pour cette promotion.</p>
+  <p>No grade for this promotion.</p>
   <% } %>
   <% } else { %>
-  <p>Veuillez sélectionner une promotion.</p>
+  <p>Choose a promotion.</p>
   <% } %>
 
   <!-- Suppression ou modification des notes -->
@@ -98,7 +98,7 @@
 
   <!-- Bouton pour retourner à l'accueil -->
   <form action="professorHome.jsp" method="get">
-    <button type="submit" class="return">Retourner à l'accueil</button>
+    <button type="submit" class="return">Main page</button>
   </form>
 </div>
 </body>

@@ -9,7 +9,7 @@ public class StudentTable {
 
     public static String generateTable(){
         AdminService adminService = new AdminService();
-        List<Student> studentList= adminService.getAllStudents();
+        List<Student> studentList= adminService.getAllStudents(); //Appelle le service pour obtenir tous les comptes étudiants présents dans la base de données
         StringBuilder table = new StringBuilder();
         for (Student student : studentList) {
             table.append("<tr><td>");

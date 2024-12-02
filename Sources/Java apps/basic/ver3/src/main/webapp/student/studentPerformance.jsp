@@ -8,25 +8,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapport de Performance</title>
+  <title>Results</title>
   <link rel="stylesheet" href="styleStudentPerformance.css">
 </head>
 <body>
 <div class="container">
-  <h1>Rapport de Performance</h1>
+  <h1>Results</h1>
 
   <!-- Bouton pour retourner à l'accueil -->
   <form action="studentHome.jsp" method="get">
-    <button type="submit" class="return-btn">Retourner à l'accueil</button>
+    <button type="submit" class="return-btn">Main page</button>
   </form>
 
   <%
     // Simulation des résultats pour un étudiant
     List<Result> grades = new ArrayList<>();
-    grades.add(new Result("Sciences", "Mathématiques", BigDecimal.valueOf(4), null, null));
-    grades.add(new Result("Sciences", "Physique", BigDecimal.valueOf(3), null, null));
-    grades.add(new Result("Sciences", "Chimie", BigDecimal.valueOf(2), null, null));
-    grades.add(new Result("Sciences", "Biologie", BigDecimal.valueOf(5), null, null));
+    grades.add(new Result("Sciences", "Maths", BigDecimal.valueOf(4), null, null));
+    grades.add(new Result("Sciences", "Physics", BigDecimal.valueOf(3), null, null));
+    grades.add(new Result("Sciences", "Chemistry", BigDecimal.valueOf(2), null, null));
+    grades.add(new Result("Sciences", "Biology", BigDecimal.valueOf(5), null, null));
 
     // Simulation des notes obtenues
     List<Double> scores = new ArrayList<>();
@@ -40,9 +40,9 @@
   <table border="1">
     <thead>
     <tr>
-      <th>Unité d'Enseignement</th>
-      <th>Note</th>
-      <th>Commentaire</th>
+      <th>Field</th>
+      <th>Results</th>
+      <th>Comment</th>
     </tr>
     </thead>
     <tbody>
@@ -54,13 +54,13 @@
         <%
           double score = scores.get(i);
           if (score > 15) {
-            out.print("Très Bien");
+            out.print("Excellent");
           } else if (score >= 10) {
-            out.print("Bien");
+            out.print("Good");
           } else if (score >= 5) {
-            out.print("Peu mieux faire");
+            out.print("A little more effort");
           } else {
-            out.print("Il faut plus travailler");
+            out.print("You need to work harder");
           }
         %>
       </td>

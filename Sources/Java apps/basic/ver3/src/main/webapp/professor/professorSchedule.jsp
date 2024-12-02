@@ -8,21 +8,22 @@
 <%@ page import="java.time.temporal.ChronoUnit"%>
 <%@ page import="java.sql.Date"%>
 <%@ page import="entities.Course"%>
+<%@ page import="entities.Teacher" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emploi du Temps - Professeur</title>
+  <title>Timetable</title>
   <link rel="stylesheet" href="styleSchedule.css">
 </head>
 <body>
 <div class="container">
-  <h1>Emploi du Temps - Professeur</h1>
+  <h1>Timetable</h1>
 
   <!-- Bouton pour retourner à l'accueil -->
   <form action="professorHome.jsp" method="get">
-    <button type="submit" class="return-btn">Retourner à l'accueil</button>
+    <button type="submit" class="return-btn">Main page</button>
   </form>
 
   <!-- Navigation par semaine -->
@@ -45,17 +46,17 @@
   <div class="navigation-buttons">
     <form method="get" class="inline-form">
       <input type="hidden" name="selectedDate" value="<%= startOfWeek.minus(7, ChronoUnit.DAYS) %>">
-      <button type="submit" class="nav-btn">Semaine précédente</button>
+      <button type="submit" class="nav-btn">Last week</button>
     </form>
 
     <form method="get" class="inline-form">
       <input type="hidden" name="selectedDate" value="<%= today %>">
-      <button type="submit" class="nav-btn">Aujourd'hui</button>
+      <button type="submit" class="nav-btn">Today</button>
     </form>
 
     <form method="get" class="inline-form">
       <input type="hidden" name="selectedDate" value="<%= startOfWeek.plus(7, ChronoUnit.DAYS) %>">
-      <button type="submit" class="nav-btn">Semaine suivante</button>
+      <button type="submit" class="nav-btn">Next week</button>
     </form>
   </div>
 
@@ -63,39 +64,42 @@
   <form method="get" class="date-selector">
     <label for="selectedDate">Choisir une date :</label>
     <input type="date" id="selectedDate" name="selectedDate" value="<%= selectedDate %>">
-    <button type="submit">Afficher</button>
+    <button type="submit">Show</button>
   </form>
 
   <!-- Liste des cours simulée -->
   <%
+    //    AdminService service = new AdminService();
+    //    List<Course> c = service.getAllCourses();
     List<Course> courses = new ArrayList<>();
-    // Cours pour la semaine actuelle
-    courses.add(new Course("Sciences", Date.valueOf("2024-12-04"), "09:00", "02:00", "Mathématiques", "ING1", null)); // Mercredi
-    courses.add(new Course("Sciences", Date.valueOf("2024-12-05"), "14:00", "02:00", "Physique", "ING2", null)); // Jeudi
-    courses.add(new Course("Sciences", Date.valueOf("2024-12-06"), "10:00", "02:00", "Chimie", "ING3", null)); // Vendredi
 
-    // Cours pour une autre semaine
-    courses.add(new Course("Sciences", Date.valueOf("2024-12-11"), "09:00", "01:30", "Biologie", "ING1", null)); // Mercredi (semaine suivante)
-    courses.add(new Course("Sciences", Date.valueOf("2024-12-12"), "13:00", "02:00", "Histoire", "ING2", null)); // Jeudi (semaine suivante)
+    courses.add(new Course("Sciences", Date.valueOf("2024-12-04"), "08h30", "3h00", "ING1 GI GR1", null)); // Mercredi
+    courses.add(new Course("Sciences", Date.valueOf("2024-12-05"), "12h00", "3h00", "ING1 GI GR1", null)); // Jeudi
+    courses.add(new Course("Sciences", Date.valueOf("2024-12-06"), "10h15", "3h00", "ING1 GI GR1", null)); // Vendredi
+    courses.add(new Course("Sciences", Date.valueOf("2024-12-11"), "10h15", "1h30", "ING1 GI GR1", null)); // Mercredi (semaine suivante)
 
     // Organisation des cours par jour pour la semaine sélectionnée
     Map<String, List<Course>> schedule = new LinkedHashMap<>();
-    schedule.put("Lundi", new ArrayList<>());
-    schedule.put("Mardi", new ArrayList<>());
-    schedule.put("Mercredi", new ArrayList<>());
-    schedule.put("Jeudi", new ArrayList<>());
-    schedule.put("Vendredi", new ArrayList<>());
+    schedule.put("Monday", new ArrayList<>());
+    schedule.put("Tuesday", new ArrayList<>());
+    schedule.put("Wednesday", new ArrayList<>());
+    schedule.put("Thursday", new ArrayList<>());
+    schedule.put("Friday", new ArrayList<>());
 
     for (Course course : courses) {
-      LocalDate courseDate = course.getSlot().toLocalDate();
+//      Teacher teacher = course.getTeacher();
+//      if (teacher.getMail().equals()) {
+//        continue; // Filtrer les cours d'autres professeurs
+//      }
+      LocalDate courseDate = course.getDay().toLocalDate();
       if (!courseDate.isBefore(startOfWeek) && !courseDate.isAfter(endOfWeek)) {
         String day = "";
         switch (courseDate.getDayOfWeek()) {
-          case MONDAY: day = "Lundi"; break;
-          case TUESDAY: day = "Mardi"; break;
-          case WEDNESDAY: day = "Mercredi"; break;
-          case THURSDAY: day = "Jeudi"; break;
-          case FRIDAY: day = "Vendredi"; break;
+          case MONDAY: day = "Monday"; break;
+          case TUESDAY: day = "Tuesday"; break;
+          case WEDNESDAY: day = "Wednesday"; break;
+          case THURSDAY: day = "Thursday"; break;
+          case FRIDAY: day = "Friday"; break;
           default: continue;
         }
         schedule.get(day).add(course);
@@ -110,13 +114,13 @@
       <h2><%= entry.getKey() %></h2>
       <% List<Course> dayCourses = entry.getValue(); %>
       <% if (dayCourses.isEmpty()) { %>
-      <p>Aucun cours</p>
+      <p>No course</p>
       <% } else { %>
       <ul>
         <% for (Course course : dayCourses) { %>
         <li>
-          <strong><%= course.getCourseUnit() %></strong><br>
-          <%= course.getHour() %> - Durée : <%= course.getDuration() %><br>
+          <strong><%= course.getField() %></strong><br>
+          <%= course.getHour() %> - Duration : <%= course.getDuration() %><br>
           Promotion : <%= course.getSchoolYear() %>
         </li>
         <% } %>
